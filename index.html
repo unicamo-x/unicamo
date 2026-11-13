@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UniCaMo: Hard Conditions</title>
+<style>
+:root{
+  --bg-0:#ffffff;
+  --bg-1:#f8fafc;
+  --bg-2:#f1f5f9;
+  --panel:#f8fafc;
+  --panel-border:#dbe2ea;
+  --accent-1:#155e75;
+  --accent-2:#6d28d9;
+  --accent-3:#be185d;
+  --text-primary:#1f2937;
+  --text-muted:#526074;
+  --gradient-hero:linear-gradient(135deg,#155e75 0%,#6d28d9 50%,#be185d 100%);
+  /* system stacks only: the page must not request fonts from a third party */
+  --font-sans:'Inter','Segoe UI',-apple-system,BlinkMacSystemFont,Roboto,'Helvetica Neue',Arial,sans-serif;
+  --font-mono:'JetBrains Mono',ui-monospace,'SF Mono','Cascadia Mono',Consolas,Menlo,monospace;
+  color-scheme:light;
+}
+
+/* ─── reset ─── */
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;scroll-padding-top:64px;}
+body{font-family:var(--font-sans);color:var(--text-primary);
+  background-color:var(--bg-0);line-height:1.65;overflow-x:hidden;position:relative;}
+a{color:var(--accent-1);text-decoration:none;}a:hover{text-decoration:underline;}
+img{max-width:100%;height:auto;display:block;}
+video{display:block;}
+
+@keyframes shimmer{
+  0%,100%{background-position:0% 50%;}
+  50%{background-position:100% 50%;}
+}
+
+/* ─── scroll progress bar ─── */
+#progress-bar{position:fixed;top:0;left:0;height:3px;width:0%;
+  background:var(--gradient-hero);z-index:9999;transition:width .1s linear;
+  box-shadow:0 0 12px rgba(124,240,255,.4);}
+
+/* ─── sticky navbar ─── */
+#navbar{position:fixed;top:3px;left:0;right:0;z-index:900;
+  background:rgba(255,255,255,.94);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--panel-border);
+  transform:translateY(-100%);transition:transform .3s ease;height:56px;}
+#navbar.visible{transform:translateY(0);}
+.nav-inner{max-width:1180px;margin:0 auto;padding:0 24px;height:100%;
+  display:flex;align-items:center;justify-content:space-between;gap:24px;}
+.nav-brand{font-size:13px;font-weight:700;color:var(--text-primary);white-space:nowrap;
+  letter-spacing:.04em;font-family:var(--font-mono);text-transform:uppercase;}
+.nav-brand span{background:var(--gradient-hero);-webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;}
+.nav-links{display:flex;gap:2px;flex-wrap:wrap;}
+.nav-links a{font-size:11.5px;font-weight:600;color:var(--text-muted);padding:6px 12px;border-radius:6px;
+  font-family:var(--font-mono);letter-spacing:.08em;text-transform:uppercase;
+  transition:background .18s,color .18s;}
+.nav-links a:hover,.nav-links a.active{background:rgba(124,240,255,.08);color:var(--accent-1);text-decoration:none;}
+
+/* ─── layout ─── */
+.container{max-width:1000px;margin:0 auto;padding:0 24px;}
+.container.wide{max-width:1280px;}
+section{padding:78px 0;position:relative;}
+
+/* ─── hero ─── */
+.hero{padding:96px 0 40px;text-align:center;position:relative;overflow:hidden;}
+.hero h1{font-size:clamp(26px,3.6vw,46px);font-weight:800;line-height:1.18;letter-spacing:-.02em;
+  max-width:1000px;margin:0 auto 18px;}
+.hero h1 .brand{display:block;margin-bottom:6px;
+  background:var(--gradient-hero);background-size:200% 200%;
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+  animation:shimmer 6s ease-in-out infinite;}
+.venue{display:inline-block;padding:6px 16px;border:1px solid var(--panel-border);
+  border-radius:999px;background:var(--panel);
+  font-family:var(--font-mono);font-size:12px;font-weight:500;
+  letter-spacing:.18em;text-transform:uppercase;color:var(--accent-1);margin-bottom:28px;}
+.anon-line{font-size:13px;color:var(--text-muted);margin-bottom:32px;
+  font-family:var(--font-mono);letter-spacing:.06em;}
+
+/* hero pills: one per section, each jumps to it */
+.hero-stats{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-bottom:12px;}
+.hpill{display:block;background:var(--panel);border:1px solid var(--panel-border);
+  border-radius:14px;padding:14px 22px;min-width:150px;color:var(--text-primary);
+  transition:transform .2s,border-color .2s,box-shadow .2s;}
+.hpill:hover{transform:translateY(-2px);border-color:rgba(124,240,255,.4);
+  box-shadow:0 10px 30px rgba(124,240,255,.12);text-decoration:none;}
+.hpill .pn{font-size:28px;font-weight:800;line-height:1;letter-spacing:-.04em;
+  background:var(--gradient-hero);-webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;}
+.hpill .pl{font-size:11px;color:var(--text-muted);font-weight:500;margin-top:6px;
+  letter-spacing:.1em;text-transform:uppercase;font-family:var(--font-mono);}
+
+/* ─── section titles ─── */
+.section-header{display:flex;align-items:center;gap:16px;margin-bottom:14px;}
+.section-num{font-family:var(--font-mono);font-size:13px;font-weight:600;
+  color:var(--bg-0);background:var(--gradient-hero);padding:6px 12px;border-radius:8px;letter-spacing:.05em;}
+.section-divider-flex{flex:1;height:1px;background:linear-gradient(90deg,var(--panel-border),transparent);}
+.sec-title{font-size:28px;font-weight:700;color:var(--text-primary);margin:0;letter-spacing:-.01em;}
+.sec-sub{font-size:15.5px;color:var(--text-muted);margin:0 0 28px;max-width:880px;line-height:1.65;}
+.sec-sub em{color:var(--accent-1);font-style:normal;font-weight:500;}
+
+/* ─── panels ─── */
+.panel{background:var(--panel);border:1px solid var(--panel-border);
+  border-radius:18px;padding:24px;position:relative;overflow:hidden;}
+
+/* ─── column labels ─── */
+.col-label{text-align:center;font-family:var(--font-mono);font-size:11.5px;
+  font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-1);
+  padding:6px 4px;border-bottom:2px solid;border-image:var(--gradient-hero) 1;}
+.col-label.ours{color:var(--accent-3);}
+
+/* ─── media tile ─── */
+.media-tile{position:relative;border-radius:12px;overflow:hidden;
+  background:var(--bg-2);border:1px solid var(--panel-border);
+  transition:box-shadow .25s ease;}
+.media-tile:hover{box-shadow:0 12px 32px rgba(124,240,255,.18);}
+.media-tile video{width:100%;height:100%;object-fit:contain;display:block;}
+/* one figure per signal / video of a clip; the grid has as many columns as the clip has tiles (--columns) */
+.clip-grid{display:grid;grid-template-columns:repeat(var(--columns),minmax(0,1fr));gap:12px;}
+.clip-grid figure{min-width:0;}
+.clip-grid .col-label{margin-bottom:12px;}
+.clip-grid .media-tile{aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;}
+.clip-grid video{object-fit:cover;}                /* 832x480 in a 16:9 tile: crops ~1%, no side bar */
+.media-tile.signal{background:#fff;}               /* signals are line art / RGBA overlays: a white bed, letterboxed */
+.media-tile img{width:100%;height:100%;object-fit:contain;display:block;}
+@media(max-width:1100px){.clip-grid{grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media(max-width:560px){.clip-grid{grid-template-columns:minmax(0,1fr);}}
+.comp-prompt{margin:0 0 16px;padding:12px 16px;background:var(--bg-2);
+  border-left:2px solid var(--accent-3);border-radius:0 8px 8px 0;
+  font-size:13.5px;line-height:1.65;color:var(--text-primary);font-style:italic;font-weight:300;}
+.media-tile.video-error::after{content:'⚠ video failed to decode (codec?)';position:absolute;inset:0;
+  display:flex;align-items:center;justify-content:center;background:rgba(255,90,90,.12);
+  color:#ff8a8a;font-family:var(--font-mono);font-size:12px;letter-spacing:.05em;
+  text-align:center;padding:8px;border:1px dashed rgba(255,138,138,.4);border-radius:12px;pointer-events:none;}
+
+/* ─── expand-video button ─── */
+.video-expand-btn{position:absolute;top:8px;right:8px;width:30px;height:30px;
+  border-radius:8px;background:rgba(7,8,13,.78);border:1px solid rgba(255,255,255,.18);
+  color:#fff;cursor:pointer;z-index:3;opacity:0;padding:0;
+  display:inline-flex;align-items:center;justify-content:center;
+  transition:opacity .2s ease,background .15s,transform .15s,border-color .15s;}
+.video-expand-btn svg{width:14px;height:14px;fill:currentColor;}
+.video-expand-btn:hover{background:rgba(7,8,13,.95);border-color:var(--accent-1);transform:scale(1.08);}
+.media-tile:hover .video-expand-btn{opacity:1;}
+@media (hover:none){.video-expand-btn{opacity:.85;}}
+
+/* ─── example picker ─── */
+.example-thumbnails{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;margin:0 0 20px;}
+.example-thumbnail{width:108px;padding:5px;border:2px solid transparent;border-radius:10px;
+  background:transparent;cursor:pointer;transition:background .18s,border-color .18s;}
+.example-thumbnail img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:5px;}
+.example-thumbnail:hover{background:rgba(124,240,255,.1);}
+.example-thumbnail[aria-pressed="true"]{background:rgba(124,240,255,.18);border-color:var(--accent-1);}
+.example-thumbnail:focus-visible{outline:2px solid var(--accent-3);outline-offset:3px;}
+.example-bar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px;}
+.comp-index{font-family:var(--font-mono);font-size:11.5px;
+  font-weight:600;color:var(--accent-2);letter-spacing:.12em;text-transform:uppercase;}
+.step-btns{display:flex;gap:6px;}
+.step-btn{width:30px;height:30px;border-radius:8px;border:1px solid var(--panel-border);
+  background:var(--bg-0);color:var(--text-muted);cursor:pointer;font-size:14px;line-height:1;
+  transition:border-color .15s,color .15s;}
+.step-btn:hover{border-color:var(--accent-1);color:var(--accent-1);}
+
+/* ─── lightbox ─── */
+#lightbox{position:fixed;inset:0;background:rgba(0,0,0,.94);z-index:10000;
+  display:none;align-items:center;justify-content:center;cursor:zoom-out;}
+#lightbox.open{display:flex;}
+#lightbox video{max-width:96vw;max-height:92vh;border-radius:10px;
+  box-shadow:0 24px 80px rgba(0,0,0,.7);object-fit:contain;background:#000;outline:none;}
+#lb-close{position:absolute;top:20px;right:24px;color:#fff;font-size:24px;cursor:pointer;
+  background:rgba(255,255,255,.10);border:1px solid var(--panel-border);border-radius:10px;
+  padding:4px 14px;line-height:1;transition:background .15s,border-color .15s;z-index:2;
+  font-family:var(--font-mono);}
+#lb-close:hover{background:rgba(255,255,255,.22);border-color:var(--accent-1);}
+
+/* ─── reveal on scroll ─── */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .55s ease,transform .55s ease;}
+.reveal.up{opacity:1;transform:none;}
+
+/* ─── footer ─── */
+.ack{border-top:1px solid var(--panel-border);padding:40px 0;text-align:center;background:var(--bg-1);}
+.ack p{font-size:13px;color:var(--text-muted);max-width:740px;margin:0 auto;line-height:1.75;}
+footer{background:var(--bg-0);color:var(--text-muted);text-align:center;
+  padding:24px;font-size:12px;letter-spacing:.08em;
+  font-family:var(--font-mono);text-transform:uppercase;border-top:1px solid var(--panel-border);}
+
+/* ─── responsive ─── */
+@media(max-width:880px){
+  .nav-links{display:none;}
+  .hero{padding:60px 0 32px;}
+  section{padding:54px 0;}
+  .hero h1{font-size:24px;}
+  .hpill{padding:11px 16px;min-width:120px;}
+  .hpill .pn{font-size:24px;}
+  .sec-title{font-size:24px;}
+  .panel{padding:16px;}
+  .example-thumbnail{width:84px;}
+}
+</style>
+</head>
+<body>
+
+<div id="progress-bar"></div>
+
+<nav id="navbar">
+  <div class="nav-inner">
+    <span class="nav-brand"><span>UniCaMo</span></span>
+    <div class="nav-links" id="navLinks"></div>
+  </div>
+</nav>
+
+<!-- ══════════ HERO ══════════ -->
+<section class="hero" id="top">
+  <div class="container">
+    <span class="venue">ICLR 2027 Rebuttal</span>
+    <h1>
+      <span class="brand">UniCaMo</span>
+      Results Under Hard Conditions
+    </h1>
+    <p class="anon-line">Anonymous authors &nbsp;&middot;&nbsp; Paper under double-blind review</p>
+    <div class="hero-stats" id="heroStats"></div>
+  </div>
+</section>
+
+<!-- Sections are generated from SECTIONS below. -->
+<div id="sections"></div>
+
+<div class="ack">
+  <div class="container">
+    <p>
+      Each example shows the control signals that drive UniCaMo (camera trajectory and/or object motion),
+      the ground-truth video where one exists, and the UniCaMo result. Hover a video and press the
+      expand button to watch it full screen.
+    </p>
+  </div>
+</div>
+<footer><p>UniCaMo</p></footer>
+
+<div id="lightbox" onclick="if(event.target.id==='lightbox')closeLB()">
+  <button id="lb-close" onclick="closeLB()" aria-label="Close">&times;</button>
+  <video id="lb-video" controls loop playsinline></video>
+</div>
+
+<script src="content.js"></script>
+<script>
+/* ═══ CONTENT ═══ */
+// Section copy lives here; the clips of each section (tiles, prompts) come from content.js, which
+// make_content.py generates from the media folders. Thumbnails: images/thumbnails/<id>/<clip>.jpg.
+const SECTIONS = [
+    {
+        id: 'extreme_camera',
+        nav: 'Camera',
+        title: 'Extreme Camera Trajectory',
+        sub: 'Large, fast camera motion: wide orbits, long pushes and sharp turns that move the viewpoint far from the first frame. The camera path (drawn as frustums from <em>t=0s</em> to <em>t=5s</em>) is the only control signal.'
+    },
+    {
+        id: 'rotation',
+        nav: 'Rotation',
+        title: '3D Rotation',
+        sub: 'Subjects that turn in place or rotate out of the image plane, under a camera path and a 3D object-motion signal. Sides that are hidden in the first frame come into view.'
+    },
+    {
+        id: 'disocclusion',
+        nav: 'Disocclusion',
+        title: 'Reappearance &amp; Disocclusion',
+        sub: 'Objects that leave the frame or pass behind an occluder and then come back. The subject <em>reappears with the same identity</em> and the uncovered background stays coherent. Examples with moving objects also show their motion signal.'
+    },
+    {
+        id: 'manipulation',
+        nav: 'Manipulation',
+        title: 'Rigid, Articulated &amp; OOD Object Manipulation',
+        sub: 'Rigid, articulated and out-of-distribution objects moved by a designed 3D path. The control signal shows frame 0 lifted to 3D with the <em>red path</em> of the chosen part (arrowheads give the direction of travel); UniCaMo moves only that part while the rest of the scene stays put.'
+    }
+];
+SECTIONS.forEach(s => { s.clips = CONTENT[s.id] || []; });
+
+const pad2 = n => String(n).padStart(2, '0');
+
+/* ═══ build nav, hero pills and section shells ═══ */
+document.getElementById('navLinks').innerHTML =
+    SECTIONS.map(s => `<a href="#${s.id}">${s.nav}</a>`).join('');
+document.getElementById('heroStats').innerHTML = SECTIONS.map((s, i) =>
+    `<a class="hpill" href="#${s.id}"><div class="pn">${pad2(i + 1)}</div><div class="pl">${s.nav}</div></a>`).join('');
+document.getElementById('sections').innerHTML = SECTIONS.map((s, i) => `
+<section id="${s.id}">
+  <div class="container wide">
+    <div class="section-header reveal">
+      <span class="section-num">${pad2(i + 1)}</span>
+      <h2 class="sec-title">${s.title}</h2>
+      <div class="section-divider-flex"></div>
+    </div>
+    <p class="sec-sub reveal">${s.sub}</p>
+    <div class="panel reveal" id="${s.id}-panel"></div>
+  </div>
+</section>`).join('');
+
+/* ═══ scroll progress bar ═══ */
+window.addEventListener('scroll', () => {
+  const pct = window.scrollY / (document.body.scrollHeight - window.innerHeight) * 100;
+  document.getElementById('progress-bar').style.width = pct + '%';
+}, {passive:true});
+
+/* ═══ sticky navbar + active link ═══ */
+const navbar = document.getElementById('navbar');
+function updateNavbar() {
+  const heroBottom = document.querySelector('.hero').offsetHeight;
+  navbar.classList.toggle('visible', window.scrollY > heroBottom - 80);
+  const y = window.scrollY + 110;
+  let active = SECTIONS[0].id;
+  SECTIONS.forEach(s => {
+    const el = document.getElementById(s.id);
+    if (el && el.offsetTop <= y) active = s.id;
+  });
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    a.classList.toggle('active', a.getAttribute('href') === '#' + active);
+  });
+}
+window.addEventListener('scroll', updateNavbar, {passive:true});
+window.addEventListener('resize', updateNavbar);
+updateNavbar();
+
+/* ═══ reveal on scroll ═══ */
+const revealObs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('up'); revealObs.unobserve(e.target); } });
+}, {threshold: 0.1});
+document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+
+/* ═══ lightbox ═══ */
+function openLBVideo(src) {
+  if (!src) return;
+  const vid = document.getElementById('lb-video');
+  vid.src = src;
+  vid.muted = true;
+  vid.play().catch(() => {});
+  document.getElementById('lightbox').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeLB() {
+  const vid = document.getElementById('lb-video');
+  vid.pause(); vid.removeAttribute('src'); vid.load();
+  document.getElementById('lightbox').classList.remove('open');
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && document.getElementById('lightbox').classList.contains('open')) closeLB();
+});
+
+/* ═══ expand button on each video tile ═══ */
+const EXPAND_ICON_SVG = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h6v2H6v4H4V4zm10 0h6v6h-2V6h-4V4zM4 14h2v4h4v2H4v-6zm16 0h-2v4h-4v2h6v-6z"/></svg>';
+function addExpandButton(video) {
+  const tile = video.closest('.media-tile');
+  if (!tile || tile.querySelector('.video-expand-btn')) return;
+  const btn = document.createElement('button');
+  btn.type = 'button';
+  btn.className = 'video-expand-btn';
+  btn.setAttribute('aria-label', 'Expand video');
+  btn.title = 'Expand';
+  btn.innerHTML = EXPAND_ICON_SVG;
+  btn.addEventListener('click', e => {
+    e.stopPropagation();
+    openLBVideo(video.currentSrc || video.src);
+  });
+  tile.appendChild(btn);
+}
+
+/* ═══ lazy-play: only on-screen clips play (avoids the browser's concurrent-autoplay cap) ═══ */
+const videoObserver = new IntersectionObserver(entries => {
+  entries.forEach(({target: v, isIntersecting}) => {
+    if (isIntersecting) { if (v.paused) v.play().catch(() => {}); }
+    else if (!v.paused) v.pause();
+  });
+}, { threshold: 0.15 });
+
+function wireVideo(v, observe) {
+  v.muted = true;
+  v.playsInline = true;
+  if (observe) videoObserver.observe(v);
+  addExpandButton(v);
+  const markError = () => v.closest('.media-tile')?.classList.add('video-error');
+  v.addEventListener('error', markError);
+  setTimeout(() => {
+    if (v.isConnected && v.readyState < 2 && !v.error) {
+      v.load();
+      setTimeout(() => { if (v.isConnected && v.readyState < 2) markError(); }, 3000);
+    }
+  }, 4000);
+}
+
+/* ═══ synchronised pair: ground truth is the master, the other clips follow it ═══ */
+// All clips are 81 frames at 16 fps, so they loop in step; this only keeps them locked. Followers get
+// playbackRate = duration ratio (1.0, or a hair off when a container rounds its duration) and are snapped back
+// to the master's phase (circular distance, both loop) whenever they drift.
+function syncGroup(vids) {
+  const m = vids[0];
+  const rates = () => {
+    if (!isFinite(m.duration)) return;
+    vids.forEach(v => { if (v !== m && isFinite(v.duration)) v.playbackRate = v.duration / m.duration; });
+  };
+  const follow = () => {
+    if (!isFinite(m.duration) || m.duration <= 0) return;
+    const phase = m.currentTime / m.duration;
+    vids.forEach(v => {
+      if (v === m || v.readyState < 2 || !isFinite(v.duration)) return;
+      const target = phase * v.duration;
+      const d = Math.abs(v.currentTime - target);
+      if (Math.min(d, v.duration - d) > 0.15) v.currentTime = target;
+      if (!m.paused && v.paused) v.play().catch(() => {});
+    });
+  };
+  vids.forEach(v => v.addEventListener('loadedmetadata', rates));
+  rates();
+  m.addEventListener('timeupdate', follow);
+  m.addEventListener('seeked', follow);
+}
+
+const esc = t => t.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+
+/* ═══ per-section example picker: one clip mounted at a time ═══ */
+SECTIONS.forEach(s => {
+  const panel = document.getElementById(`${s.id}-panel`);
+  const n = s.clips.length;
+  if (!n) { panel.textContent = 'No examples yet.'; return; }
+  const thumbnails = document.createElement('div');
+  thumbnails.className = 'example-thumbnails';
+  thumbnails.setAttribute('role', 'group');
+  thumbnails.setAttribute('aria-label', 'Choose an example');
+  const view = document.createElement('div');
+  let selected = -1;
+  let groupObs = null;                       // plays/pauses the synced videos of the mounted clip together
+
+  s.clips.forEach((clip, i) => {
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'example-thumbnail';
+    b.title = `Example ${i + 1}`;
+    b.setAttribute('aria-label', `Show example ${i + 1}`);
+    b.setAttribute('aria-pressed', 'false');
+    b.innerHTML = `<img src="${encodeURI(`images/thumbnails/${s.id}/${clip.name}.jpg`)}" alt="" loading="lazy">`;
+    b.addEventListener('click', () => select(i));
+    thumbnails.appendChild(b);
+  });
+  panel.append(thumbnails, view);
+
+  function select(i) {
+    i = (i + n) % n;
+    if (i === selected) return;
+    selected = i;
+    const clip = s.clips[i];
+    // release the previous clip before mounting the next one
+    if (groupObs) { groupObs.disconnect(); groupObs = null; }
+    view.querySelectorAll('video').forEach(v => {
+      videoObserver.unobserve(v); v.pause(); v.removeAttribute('src'); v.load();
+    });
+    [...thumbnails.children].forEach((b, k) => b.setAttribute('aria-pressed', String(k === i)));
+    const tiles = clip.tiles.map(t => `
+        <figure>
+          <figcaption class="col-label${t.ours ? ' ours' : ''}">${t.label}</figcaption>
+          <div class="media-tile${t.kind === 'img' ? ' signal' : ''}">${t.kind === 'img'
+            ? `<img src="${encodeURI(t.src)}" alt="${t.label}, example ${i + 1}" loading="lazy">`
+            : `<video src="${encodeURI(t.src)}" aria-label="${t.label}, example ${i + 1}" loop muted playsinline preload="auto"></video>`}</div>
+        </figure>`).join('');
+    view.innerHTML = `
+      <div class="example-bar">
+        <span class="comp-index" role="status">Example ${pad2(i + 1)} / ${pad2(n)}</span>
+        <span class="step-btns">
+          <button type="button" class="step-btn" data-step="-1" aria-label="Previous example">&larr;</button>
+          <button type="button" class="step-btn" data-step="1" aria-label="Next example">&rarr;</button>
+        </span>
+      </div>
+      ${clip.prompt ? `<p class="comp-prompt">${esc(clip.prompt)}</p>` : ''}
+      <div class="clip-grid" style="--columns:${clip.tiles.length}">${tiles}</div>`;
+    view.querySelectorAll('.step-btn').forEach(b =>
+      b.addEventListener('click', () => select(selected + Number(b.dataset.step))));
+    const vids = [...view.querySelectorAll('video')];
+    const synced = vids.length > 1;
+    vids.forEach(v => wireVideo(v, !synced));
+    if (synced) {
+      syncGroup(vids);
+      groupObs = new IntersectionObserver(([e]) => {
+        vids.forEach(v => {
+          if (e.isIntersecting) v.play().catch(() => {}); else v.pause();
+        });
+      }, { threshold: 0.15 });
+      groupObs.observe(view.querySelector('.clip-grid'));
+    }
+  }
+  select(0);
+});
+</script>
+</body>
+</html>
