@@ -552,7 +552,7 @@ const CONTENT = {
   },
   {
    "name": "open-fridge-2",
-   "prompt": "A first-person view of a man's right arm reaching forward from the lower right toward a white refrigerator in a bright kitchen. His hand grasps the vertical metal bar handle and pulls the door open toward himself; the door swings on its right-hand hinges while his hand stays on the handle. The open door reveals the brightly lit inside of the refrigerator, its shelves completely full of fresh red and green apples. A potted plant stands on the stone counter to the left and daylight comes from a window on the right. The camera remains static.",
+   "prompt": "A first-person view of a man's right arm reaching forward from the lower right toward a white refrigerator in a bright kitchen. His hand grasps the vertical metal bar handle and pulls the door open toward himself; the door swings on its right-hand hinges while his hand stays on the handle. The open door reveals the brightly lit inside of the refrigerator, its shelves completely full of fresh green apples. A potted plant stands on the stone counter to the left and daylight comes from a window on the right. The camera remains static.",
    "tiles": [
     {
      "label": "Control Signal",
