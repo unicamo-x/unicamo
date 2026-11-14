@@ -90,6 +90,72 @@ const CONTENT = {
    ]
   },
   {
+   "name": "1757611748593_00004039_b7d1dea5_part02",
+   "prompt": "A man in a red helmet and sunglasses is ziplining through a lush green forest. He moves forward and slightly downward, extending his arms outward as he glides, with his body swaying gently. His left hand, adorned with a smartwatch, occasionally comes into view as he shifts his position. The background reveals dense trees, distant houses, and winding paths under bright daylight. The camera follows his movement, maintaining a steady perspective from above as he descends.",
+   "tiles": [
+    {
+     "label": "Camera Signal",
+     "kind": "img",
+     "src": "Extreme_camera_trajectory/camera_signal/1757611748593_00004039_b7d1dea5_part02.png"
+    },
+    {
+     "label": "Ground Truth",
+     "kind": "video",
+     "src": "Extreme_camera_trajectory/gt/1757611748593_00004039_b7d1dea5_part02.mp4"
+    },
+    {
+     "label": "UniCaMo (Ours)",
+     "kind": "video",
+     "src": "Extreme_camera_trajectory/unicamo/1757611748593_00004039_b7d1dea5_part02.mp4",
+     "ours": true
+    }
+   ]
+  },
+  {
+   "name": "1757614269637_00042762_93bfaac9_part01",
+   "prompt": "A woman in a pink shirt and black leggings is stretching on a paved path. She moves from a lunge position to a wide-legged stance, turning her back to the camera as she stretches. The sun sets behind her, casting long shadows across the path. The background features bare trees lining the path and a body of water visible through the trees. The camera follows her movement smoothly, maintaining a consistent distance.",
+   "tiles": [
+    {
+     "label": "Camera Signal",
+     "kind": "img",
+     "src": "Extreme_camera_trajectory/camera_signal/1757614269637_00042762_93bfaac9_part01.png"
+    },
+    {
+     "label": "Ground Truth",
+     "kind": "video",
+     "src": "Extreme_camera_trajectory/gt/1757614269637_00042762_93bfaac9_part01.mp4"
+    },
+    {
+     "label": "UniCaMo (Ours)",
+     "kind": "video",
+     "src": "Extreme_camera_trajectory/unicamo/1757614269637_00042762_93bfaac9_part01.mp4",
+     "ours": true
+    }
+   ]
+  },
+  {
+   "name": "43tBrOV1-sY__b2dc1873918e67d8",
+   "prompt": "The camera smoothly pans left, transitioning from a tiled kitchen with a stainless steel refrigerator and black bar stools to a warmly lit dining room featuring a wooden table surrounded by matching chairs, ornate floral wallpaper, and a chandelier hanging above, with natural light streaming through windows. The camera movement is steady and deliberate, maintaining a consistent eye-level perspective as it reveals the spatial relationship between the adjacent rooms, emphasizing the elegant, traditional decor and the contrast between the modern kitchen and classic dining area.",
+   "tiles": [
+    {
+     "label": "Camera Signal",
+     "kind": "img",
+     "src": "Extreme_camera_trajectory/camera_signal/43tBrOV1-sY__b2dc1873918e67d8.png"
+    },
+    {
+     "label": "Ground Truth",
+     "kind": "video",
+     "src": "Extreme_camera_trajectory/gt/43tBrOV1-sY__b2dc1873918e67d8.mp4"
+    },
+    {
+     "label": "UniCaMo (Ours)",
+     "kind": "video",
+     "src": "Extreme_camera_trajectory/unicamo/43tBrOV1-sY__b2dc1873918e67d8.mp4",
+     "ours": true
+    }
+   ]
+  },
+  {
    "name": "-lF1OltRIOw__1d46e25b06eef337",
    "prompt": "The camera smoothly pans right across a modern kitchen, revealing a stainless steel stove with a digital display, dark wooden cabinets, a mosaic tile backsplash, and a sink area with a faucet and window, while a red coffee maker and a wine bottle sit on the countertop to the left.",
    "tiles": [
@@ -129,28 +195,6 @@ const CONTENT = {
      "label": "UniCaMo (Ours)",
      "kind": "video",
      "src": "Extreme_camera_trajectory/unicamo/3RbI2DVrv-U__701c87315926ad90.mp4",
-     "ours": true
-    }
-   ]
-  },
-  {
-   "name": "43tBrOV1-sY__b2dc1873918e67d8",
-   "prompt": "The camera smoothly pans left, transitioning from a tiled kitchen with a stainless steel refrigerator and black bar stools to a warmly lit dining room featuring a wooden table surrounded by matching chairs, ornate floral wallpaper, and a chandelier hanging above, with natural light streaming through windows. The camera movement is steady and deliberate, maintaining a consistent eye-level perspective as it reveals the spatial relationship between the adjacent rooms, emphasizing the elegant, traditional decor and the contrast between the modern kitchen and classic dining area.",
-   "tiles": [
-    {
-     "label": "Camera Signal",
-     "kind": "img",
-     "src": "Extreme_camera_trajectory/camera_signal/43tBrOV1-sY__b2dc1873918e67d8.png"
-    },
-    {
-     "label": "Ground Truth",
-     "kind": "video",
-     "src": "Extreme_camera_trajectory/gt/43tBrOV1-sY__b2dc1873918e67d8.mp4"
-    },
-    {
-     "label": "UniCaMo (Ours)",
-     "kind": "video",
-     "src": "Extreme_camera_trajectory/unicamo/43tBrOV1-sY__b2dc1873918e67d8.mp4",
      "ours": true
     }
    ]
@@ -423,7 +467,7 @@ const CONTENT = {
  "manipulation": [
   {
    "name": "flying-bicycle",
-   "prompt": "",
+   "prompt": "A man wearing a helmet rides a black bicycle along a path in a sunny park, pedaling steadily as the wheels spin. Then he and the bicycle magically lift off the ground and fly up into the sky, rising higher and higher above the grass while the wheels keep turning. Green trees and a bright lawn stretch out behind him. The camera pans to the right and tilts up, following the man as he rides and takes off.",
    "tiles": [
     {
      "label": "Control Signal",
@@ -440,7 +484,7 @@ const CONTENT = {
   },
   {
    "name": "bend-rope",
-   "prompt": "",
+   "prompt": "A first-person view of a man holding a thick rope with both hands above a wooden table. He slowly brings his two fists toward each other, and the rope slackens and bends into a deep hanging curve between his hands. Then he moves his hands apart again and pulls the rope tight until it is stretched straight between his fists. Soft daylight comes from a window on the left. The camera remains static.",
    "tiles": [
     {
      "label": "Control Signal",
@@ -457,7 +501,7 @@ const CONTENT = {
   },
   {
    "name": "closing-drawer",
-   "prompt": "",
+   "prompt": "A person in a grey tracksuit stands in a bright modern kitchen with one hand on the front of an open wooden drawer filled with kitchen utensils. The person leans forward and pushes the drawer smoothly into the cabinet under the countertop until it is closed, then straightens up and pulls it back out again to open it. The utensils stay in place inside the drawer as it slides. Sunlight fills the kitchen. The camera remains static.",
    "tiles": [
     {
      "label": "Control Signal",
@@ -474,7 +518,7 @@ const CONTENT = {
   },
   {
    "name": "cut-bread",
-   "prompt": "",
+   "prompt": "A baker in a flour-dusted brown apron slices a rustic loaf of bread on a wooden cutting board. His right hand moves a serrated bread knife back and forth in a steady sawing motion, cutting down through the crust, while his left hand holds the loaf still. Shelves of fresh bread stand in the warm light of the bakery behind him. The camera remains static.",
    "tiles": [
     {
      "label": "Control Signal",
@@ -491,7 +535,7 @@ const CONTENT = {
   },
   {
    "name": "fold-clothes-2",
-   "prompt": "",
+   "prompt": "A top-down view of a blue cotton T-shirt lying flat on a wooden table, with a man's two hands resting on either side of it. The hands reach to the bottom-left and bottom-right corners of the shirt, pinch the hem and lift it. They carry the hem upward over the shirt, the soft fabric bending in a rounded fold and sagging loosely between the hands, then lay it on the chest just below the collar and let go, and the cloth drops and settles into a neat half fold. The bare wooden table shows where the lower half of the shirt was, in soft daylight. The camera remains static.",
    "tiles": [
     {
      "label": "Control Signal",
@@ -508,7 +552,7 @@ const CONTENT = {
   },
   {
    "name": "open-fridge-2",
-   "prompt": "",
+   "prompt": "A first-person view of a man's right arm reaching forward from the lower right toward a white refrigerator in a bright kitchen. His hand grasps the vertical metal bar handle and pulls the door open toward himself; the door swings on its right-hand hinges while his hand stays on the handle. The open door reveals the brightly lit inside of the refrigerator, its shelves completely full of fresh red and green apples. A potted plant stands on the stone counter to the left and daylight comes from a window on the right. The camera remains static.",
    "tiles": [
     {
      "label": "Control Signal",
@@ -525,7 +569,7 @@ const CONTENT = {
   },
   {
    "name": "wash-dishes",
-   "prompt": "",
+   "prompt": "A first-person view of two hands washing a dirty white plate in a stainless-steel kitchen sink. The right hand presses a yellow sponge against the plate and scrubs it in circular motions, spreading soap foam and wiping away the sauce stains, while the left hand holds the plate steady. Water drops glisten in the sink. The camera remains static.",
    "tiles": [
     {
      "label": "Control Signal",
