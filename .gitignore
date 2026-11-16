@@ -18,3 +18,10 @@ __pycache__/
 *.pyc
 *.log
 *.tmp
+
+# Local-only files and private notes (cluster paths, username): never publish.
+serve.py
+SETUP.md
+*_original_backup/
+Rigid-articulated-OOD object manipulation/**/CHOSEN.txt
+Rigid-articulated-OOD object manipulation/**/CONTROL.txt
