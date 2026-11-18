@@ -133,7 +133,7 @@ section{padding:78px 0;position:relative;}
 .comp-prompt{margin:0 0 16px;padding:12px 16px;background:var(--bg-2);
   border-left:2px solid var(--accent-3);border-radius:0 8px 8px 0;
   font-size:13.5px;line-height:1.65;color:var(--text-primary);font-style:italic;font-weight:300;}
-.media-tile.video-error::after{content:'⚠ video failed to decode (codec?)';position:absolute;inset:0;
+.media-tile.video-error::after{content:'⚠ video failed to load: reload the page (F5)';position:absolute;inset:0;
   display:flex;align-items:center;justify-content:center;background:rgba(255,90,90,.12);
   color:#ff8a8a;font-family:var(--font-mono);font-size:12px;letter-spacing:.05em;
   text-align:center;padding:8px;border:1px dashed rgba(255,138,138,.4);border-radius:12px;pointer-events:none;}
@@ -178,6 +178,14 @@ section{padding:78px 0;position:relative;}
   font-family:var(--font-mono);}
 #lb-close:hover{background:rgba(255,255,255,.22);border-color:var(--accent-1);}
 
+/* ─── reload notice: always on screen ─── */
+#reload-notice{position:fixed;left:50%;bottom:14px;transform:translateX(-50%);z-index:950;
+  max-width:calc(100vw - 24px);padding:8px 16px;border-radius:999px;
+  background:rgba(255,251,235,.96);border:1px solid #f5c26b;color:#7c4a03;
+  font-family:var(--font-mono);font-size:12px;letter-spacing:.04em;text-align:center;
+  box-shadow:0 6px 20px rgba(0,0,0,.08);}
+body{padding-bottom:56px;}                     /* keep the footer clear of the notice */
+
 /* ─── reveal on scroll ─── */
 .reveal{opacity:0;transform:translateY(24px);transition:opacity .55s ease,transform .55s ease;}
 .reveal.up{opacity:1;transform:none;}
@@ -206,6 +214,8 @@ footer{background:var(--bg-0);color:var(--text-muted);text-align:center;
 <body>
 
 <div id="progress-bar"></div>
+
+<div id="reload-notice" role="note">⚠ If a video shows a decode error or does not play, reload the page (F5).</div>
 
 <nav id="navbar">
   <div class="nav-inner">
