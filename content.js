@@ -583,6 +583,16 @@ const CONTENT = {
      "src": "reappearance-occlusion/gt/1757614396640_00044746_46c1d9b1_part02.mp4"
     },
     {
+     "label": "SymphoMotion",
+     "kind": "video",
+     "src": "reappearance-occlusion/symphomotion/1757614396640_00044746_46c1d9b1_part02.mp4"
+    },
+    {
+     "label": "VerseCrafter",
+     "kind": "video",
+     "src": "reappearance-occlusion/versecrafter/1757614396640_00044746_46c1d9b1_part02.mp4"
+    },
+    {
      "label": "UniCaMo (Ours)",
      "kind": "video",
      "src": "reappearance-occlusion/unicamo/1757614396640_00044746_46c1d9b1_part02.mp4",
@@ -603,6 +613,16 @@ const CONTENT = {
      "label": "Ground Truth",
      "kind": "video",
      "src": "reappearance-occlusion/gt/1757621528436_00159144_e357197e_part02.mp4"
+    },
+    {
+     "label": "SymphoMotion",
+     "kind": "video",
+     "src": "reappearance-occlusion/symphomotion/1757621528436_00159144_e357197e_part02.mp4"
+    },
+    {
+     "label": "VerseCrafter",
+     "kind": "video",
+     "src": "reappearance-occlusion/versecrafter/1757621528436_00159144_e357197e_part02.mp4"
     },
     {
      "label": "UniCaMo (Ours)",
@@ -632,6 +652,16 @@ const CONTENT = {
      "src": "reappearance-occlusion/gt/1757622666821_00176441_aaa5735d_part01.mp4"
     },
     {
+     "label": "SymphoMotion",
+     "kind": "video",
+     "src": "reappearance-occlusion/symphomotion/1757622666821_00176441_aaa5735d_part01.mp4"
+    },
+    {
+     "label": "VerseCrafter",
+     "kind": "video",
+     "src": "reappearance-occlusion/versecrafter/1757622666821_00176441_aaa5735d_part01.mp4"
+    },
+    {
      "label": "UniCaMo (Ours)",
      "kind": "video",
      "src": "reappearance-occlusion/unicamo/1757622666821_00176441_aaa5735d_part01.mp4",
@@ -659,6 +689,16 @@ const CONTENT = {
      "src": "reappearance-occlusion/gt/236917_part01.mp4"
     },
     {
+     "label": "SymphoMotion",
+     "kind": "video",
+     "src": "reappearance-occlusion/symphomotion/236917_part01.mp4"
+    },
+    {
+     "label": "VerseCrafter",
+     "kind": "video",
+     "src": "reappearance-occlusion/versecrafter/236917_part01.mp4"
+    },
+    {
      "label": "UniCaMo (Ours)",
      "kind": "video",
      "src": "reappearance-occlusion/unicamo/236917_part01.mp4",
@@ -684,6 +724,16 @@ const CONTENT = {
      "label": "Ground Truth",
      "kind": "video",
      "src": "reappearance-occlusion/gt/348811051_part01.mp4"
+    },
+    {
+     "label": "SymphoMotion",
+     "kind": "video",
+     "src": "reappearance-occlusion/symphomotion/348811051_part01.mp4"
+    },
+    {
+     "label": "VerseCrafter",
+     "kind": "video",
+     "src": "reappearance-occlusion/versecrafter/348811051_part01.mp4"
     },
     {
      "label": "UniCaMo (Ours)",
