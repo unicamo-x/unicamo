@@ -180,11 +180,12 @@ section{padding:78px 0;position:relative;}
 
 /* ─── reload notice: always on screen ─── */
 #reload-notice{position:fixed;left:50%;bottom:14px;transform:translateX(-50%);z-index:950;
-  max-width:calc(100vw - 24px);padding:8px 16px;border-radius:999px;
-  background:rgba(255,251,235,.96);border:1px solid #f5c26b;color:#7c4a03;
-  font-family:var(--font-mono);font-size:12px;letter-spacing:.04em;text-align:center;
-  box-shadow:0 6px 20px rgba(0,0,0,.08);}
-body{padding-bottom:56px;}                     /* keep the footer clear of the notice */
+  width:max-content;max-width:calc(100vw - 24px);padding:12px 26px;border-radius:999px;
+  background:rgba(255,251,235,.97);border:2px solid #f5a524;color:#7c4a03;
+  font-family:var(--font-mono);font-size:16px;font-weight:600;letter-spacing:.03em;text-align:center;
+  box-shadow:0 8px 26px rgba(0,0,0,.12);}
+@media(max-width:880px){#reload-notice{font-size:13px;padding:10px 16px;border-radius:14px;}}
+body{padding-bottom:80px;}                     /* keep the footer clear of the notice */
 
 /* ─── reveal on scroll ─── */
 .reveal{opacity:0;transform:translateY(24px);transition:opacity .55s ease,transform .55s ease;}
