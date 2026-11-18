@@ -801,6 +801,11 @@ const CONTENT = {
      "src": "camera_control/versecrafter/1.mp4"
     },
     {
+     "label": "WorldForge",
+     "kind": "video",
+     "src": "camera_control/worldforge/1.mp4"
+    },
+    {
      "label": "UniCaMo (Ours)",
      "kind": "video",
      "src": "camera_control/unicamo/1.mp4",
@@ -841,6 +846,11 @@ const CONTENT = {
      "label": "VerseCrafter",
      "kind": "video",
      "src": "camera_control/versecrafter/2.mp4"
+    },
+    {
+     "label": "WorldForge",
+     "kind": "video",
+     "src": "camera_control/worldforge/2.mp4"
     },
     {
      "label": "UniCaMo (Ours)",
@@ -885,6 +895,11 @@ const CONTENT = {
      "src": "camera_control/versecrafter/3.mp4"
     },
     {
+     "label": "WorldForge",
+     "kind": "video",
+     "src": "camera_control/worldforge/3.mp4"
+    },
+    {
      "label": "UniCaMo (Ours)",
      "kind": "video",
      "src": "camera_control/unicamo/3.mp4",
@@ -925,6 +940,11 @@ const CONTENT = {
      "label": "VerseCrafter",
      "kind": "video",
      "src": "camera_control/versecrafter/4.mp4"
+    },
+    {
+     "label": "WorldForge",
+     "kind": "video",
+     "src": "camera_control/worldforge/4.mp4"
     },
     {
      "label": "UniCaMo (Ours)",
@@ -969,6 +989,11 @@ const CONTENT = {
      "src": "camera_control/versecrafter/5.mp4"
     },
     {
+     "label": "WorldForge",
+     "kind": "video",
+     "src": "camera_control/worldforge/5.mp4"
+    },
+    {
      "label": "UniCaMo (Ours)",
      "kind": "video",
      "src": "camera_control/unicamo/5.mp4",
@@ -1009,6 +1034,11 @@ const CONTENT = {
      "label": "VerseCrafter",
      "kind": "video",
      "src": "camera_control/versecrafter/6.mp4"
+    },
+    {
+     "label": "WorldForge",
+     "kind": "video",
+     "src": "camera_control/worldforge/6.mp4"
     },
     {
      "label": "UniCaMo (Ours)",
@@ -1053,6 +1083,11 @@ const CONTENT = {
      "src": "camera_control/versecrafter/7.mp4"
     },
     {
+     "label": "WorldForge",
+     "kind": "video",
+     "src": "camera_control/worldforge/7.mp4"
+    },
+    {
      "label": "UniCaMo (Ours)",
      "kind": "video",
      "src": "camera_control/unicamo/7.mp4",
@@ -1093,6 +1128,11 @@ const CONTENT = {
      "label": "VerseCrafter",
      "kind": "video",
      "src": "camera_control/versecrafter/8.mp4"
+    },
+    {
+     "label": "WorldForge",
+     "kind": "video",
+     "src": "camera_control/worldforge/8.mp4"
     },
     {
      "label": "UniCaMo (Ours)",
