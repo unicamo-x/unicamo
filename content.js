@@ -16,6 +16,16 @@ const CONTENT = {
      "src": "Extreme_camera_trajectory/gt/346796056_part01.mp4"
     },
     {
+     "label": "SymphoMotion",
+     "kind": "video",
+     "src": "Extreme_camera_trajectory/symphomotion/346796056_part01.mp4"
+    },
+    {
+     "label": "VerseCrafter",
+     "kind": "video",
+     "src": "Extreme_camera_trajectory/versecrafter/346796056_part01.mp4"
+    },
+    {
      "label": "UniCaMo (Ours)",
      "kind": "video",
      "src": "Extreme_camera_trajectory/unicamo/346796056_part01.mp4",
@@ -36,6 +46,16 @@ const CONTENT = {
      "label": "Ground Truth",
      "kind": "video",
      "src": "Extreme_camera_trajectory/gt/gm1328818930-412741468_part02.mp4"
+    },
+    {
+     "label": "SymphoMotion",
+     "kind": "video",
+     "src": "Extreme_camera_trajectory/symphomotion/gm1328818930-412741468_part02.mp4"
+    },
+    {
+     "label": "VerseCrafter",
+     "kind": "video",
+     "src": "Extreme_camera_trajectory/versecrafter/gm1328818930-412741468_part02.mp4"
     },
     {
      "label": "UniCaMo (Ours)",
@@ -60,6 +80,16 @@ const CONTENT = {
      "src": "Extreme_camera_trajectory/gt/1757614593297_00047915_8fdfde3a_part01.mp4"
     },
     {
+     "label": "SymphoMotion",
+     "kind": "video",
+     "src": "Extreme_camera_trajectory/symphomotion/1757614593297_00047915_8fdfde3a_part01.mp4"
+    },
+    {
+     "label": "VerseCrafter",
+     "kind": "video",
+     "src": "Extreme_camera_trajectory/versecrafter/1757614593297_00047915_8fdfde3a_part01.mp4"
+    },
+    {
      "label": "UniCaMo (Ours)",
      "kind": "video",
      "src": "Extreme_camera_trajectory/unicamo/1757614593297_00047915_8fdfde3a_part01.mp4",
@@ -80,6 +110,16 @@ const CONTENT = {
      "label": "Ground Truth",
      "kind": "video",
      "src": "Extreme_camera_trajectory/gt/gm1389310439-446649766_part01.mp4"
+    },
+    {
+     "label": "SymphoMotion",
+     "kind": "video",
+     "src": "Extreme_camera_trajectory/symphomotion/gm1389310439-446649766_part01.mp4"
+    },
+    {
+     "label": "VerseCrafter",
+     "kind": "video",
+     "src": "Extreme_camera_trajectory/versecrafter/gm1389310439-446649766_part01.mp4"
     },
     {
      "label": "UniCaMo (Ours)",
@@ -104,6 +144,16 @@ const CONTENT = {
      "src": "Extreme_camera_trajectory/gt/1757611748593_00004039_b7d1dea5_part02.mp4"
     },
     {
+     "label": "SymphoMotion",
+     "kind": "video",
+     "src": "Extreme_camera_trajectory/symphomotion/1757611748593_00004039_b7d1dea5_part02.mp4"
+    },
+    {
+     "label": "VerseCrafter",
+     "kind": "video",
+     "src": "Extreme_camera_trajectory/versecrafter/1757611748593_00004039_b7d1dea5_part02.mp4"
+    },
+    {
      "label": "UniCaMo (Ours)",
      "kind": "video",
      "src": "Extreme_camera_trajectory/unicamo/1757611748593_00004039_b7d1dea5_part02.mp4",
@@ -124,6 +174,16 @@ const CONTENT = {
      "label": "Ground Truth",
      "kind": "video",
      "src": "Extreme_camera_trajectory/gt/1757614269637_00042762_93bfaac9_part01.mp4"
+    },
+    {
+     "label": "SymphoMotion",
+     "kind": "video",
+     "src": "Extreme_camera_trajectory/symphomotion/1757614269637_00042762_93bfaac9_part01.mp4"
+    },
+    {
+     "label": "VerseCrafter",
+     "kind": "video",
+     "src": "Extreme_camera_trajectory/versecrafter/1757614269637_00042762_93bfaac9_part01.mp4"
     },
     {
      "label": "UniCaMo (Ours)",
@@ -148,6 +208,16 @@ const CONTENT = {
      "src": "Extreme_camera_trajectory/gt/43tBrOV1-sY__b2dc1873918e67d8.mp4"
     },
     {
+     "label": "SymphoMotion",
+     "kind": "video",
+     "src": "Extreme_camera_trajectory/symphomotion/43tBrOV1-sY__b2dc1873918e67d8.mp4"
+    },
+    {
+     "label": "VerseCrafter",
+     "kind": "video",
+     "src": "Extreme_camera_trajectory/versecrafter/43tBrOV1-sY__b2dc1873918e67d8.mp4"
+    },
+    {
      "label": "UniCaMo (Ours)",
      "kind": "video",
      "src": "Extreme_camera_trajectory/unicamo/43tBrOV1-sY__b2dc1873918e67d8.mp4",
@@ -170,6 +240,16 @@ const CONTENT = {
      "src": "Extreme_camera_trajectory/gt/-lF1OltRIOw__1d46e25b06eef337.mp4"
     },
     {
+     "label": "SymphoMotion",
+     "kind": "video",
+     "src": "Extreme_camera_trajectory/symphomotion/-lF1OltRIOw__1d46e25b06eef337.mp4"
+    },
+    {
+     "label": "VerseCrafter",
+     "kind": "video",
+     "src": "Extreme_camera_trajectory/versecrafter/-lF1OltRIOw__1d46e25b06eef337.mp4"
+    },
+    {
      "label": "UniCaMo (Ours)",
      "kind": "video",
      "src": "Extreme_camera_trajectory/unicamo/-lF1OltRIOw__1d46e25b06eef337.mp4",
@@ -190,6 +270,16 @@ const CONTENT = {
      "label": "Ground Truth",
      "kind": "video",
      "src": "Extreme_camera_trajectory/gt/3RbI2DVrv-U__701c87315926ad90.mp4"
+    },
+    {
+     "label": "SymphoMotion",
+     "kind": "video",
+     "src": "Extreme_camera_trajectory/symphomotion/3RbI2DVrv-U__701c87315926ad90.mp4"
+    },
+    {
+     "label": "VerseCrafter",
+     "kind": "video",
+     "src": "Extreme_camera_trajectory/versecrafter/3RbI2DVrv-U__701c87315926ad90.mp4"
     },
     {
      "label": "UniCaMo (Ours)",
