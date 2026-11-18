@@ -584,5 +584,681 @@ const CONTENT = {
     }
    ]
   }
+ ],
+ "camera_control": [
+  {
+   "name": "1",
+   "prompt": "The camera slowly pans upward, revealing a dark gray front door with a silver handle and a house number “82” on the white siding beside it, flanked by a dense green bush on the left and a flowering plant on the right, with dappled sunlight casting moving shadows across the scene.",
+   "tiles": [
+    {
+     "label": "Camera Signal",
+     "kind": "img",
+     "src": "camera_control/camera_signal/1.png"
+    },
+    {
+     "label": "Ground Truth",
+     "kind": "video",
+     "src": "camera_control/gt/1.mp4"
+    },
+    {
+     "label": "Gen3C",
+     "kind": "video",
+     "src": "camera_control/gen3c/1.mp4"
+    },
+    {
+     "label": "SymphoMotion",
+     "kind": "video",
+     "src": "camera_control/symphomotion/1.mp4"
+    },
+    {
+     "label": "CameraNoise",
+     "kind": "video",
+     "src": "camera_control/cameranoise/1.mp4"
+    },
+    {
+     "label": "VerseCrafter",
+     "kind": "video",
+     "src": "camera_control/versecrafter/1.mp4"
+    },
+    {
+     "label": "UniCaMo (Ours)",
+     "kind": "video",
+     "src": "camera_control/unicamo/1.mp4",
+     "ours": true
+    }
+   ]
+  },
+  {
+   "name": "2",
+   "prompt": "The camera smoothly descends from an upper balcony, revealing a grand foyer with a massive crystal chandelier hanging above a patterned marble floor, as it pans slightly to showcase the symmetrical layout, arched windows, and ornate railings, all bathed in warm, ambient light.",
+   "tiles": [
+    {
+     "label": "Camera Signal",
+     "kind": "img",
+     "src": "camera_control/camera_signal/2.png"
+    },
+    {
+     "label": "Ground Truth",
+     "kind": "video",
+     "src": "camera_control/gt/2.mp4"
+    },
+    {
+     "label": "Gen3C",
+     "kind": "video",
+     "src": "camera_control/gen3c/2.mp4"
+    },
+    {
+     "label": "SymphoMotion",
+     "kind": "video",
+     "src": "camera_control/symphomotion/2.mp4"
+    },
+    {
+     "label": "CameraNoise",
+     "kind": "video",
+     "src": "camera_control/cameranoise/2.mp4"
+    },
+    {
+     "label": "VerseCrafter",
+     "kind": "video",
+     "src": "camera_control/versecrafter/2.mp4"
+    },
+    {
+     "label": "UniCaMo (Ours)",
+     "kind": "video",
+     "src": "camera_control/unicamo/2.mp4",
+     "ours": true
+    }
+   ]
+  },
+  {
+   "name": "3",
+   "prompt": "The camera pans smoothly from a sunlit stone patio with outdoor furniture to the open doorway of a brick house, revealing a glimpse of the interior dining area, while the bright blue sky and bare trees in the background remain static.",
+   "tiles": [
+    {
+     "label": "Camera Signal",
+     "kind": "img",
+     "src": "camera_control/camera_signal/3.png"
+    },
+    {
+     "label": "Ground Truth",
+     "kind": "video",
+     "src": "camera_control/gt/3.mp4"
+    },
+    {
+     "label": "Gen3C",
+     "kind": "video",
+     "src": "camera_control/gen3c/3.mp4"
+    },
+    {
+     "label": "SymphoMotion",
+     "kind": "video",
+     "src": "camera_control/symphomotion/3.mp4"
+    },
+    {
+     "label": "CameraNoise",
+     "kind": "video",
+     "src": "camera_control/cameranoise/3.mp4"
+    },
+    {
+     "label": "VerseCrafter",
+     "kind": "video",
+     "src": "camera_control/versecrafter/3.mp4"
+    },
+    {
+     "label": "UniCaMo (Ours)",
+     "kind": "video",
+     "src": "camera_control/unicamo/3.mp4",
+     "ours": true
+    }
+   ]
+  },
+  {
+   "name": "4",
+   "prompt": "The camera smoothly pans right, revealing a bright, open-plan dining and kitchen area with a wooden dining table in the foreground and a white kitchen island separating the spaces.",
+   "tiles": [
+    {
+     "label": "Camera Signal",
+     "kind": "img",
+     "src": "camera_control/camera_signal/4.png"
+    },
+    {
+     "label": "Ground Truth",
+     "kind": "video",
+     "src": "camera_control/gt/4.mp4"
+    },
+    {
+     "label": "Gen3C",
+     "kind": "video",
+     "src": "camera_control/gen3c/4.mp4"
+    },
+    {
+     "label": "SymphoMotion",
+     "kind": "video",
+     "src": "camera_control/symphomotion/4.mp4"
+    },
+    {
+     "label": "CameraNoise",
+     "kind": "video",
+     "src": "camera_control/cameranoise/4.mp4"
+    },
+    {
+     "label": "VerseCrafter",
+     "kind": "video",
+     "src": "camera_control/versecrafter/4.mp4"
+    },
+    {
+     "label": "UniCaMo (Ours)",
+     "kind": "video",
+     "src": "camera_control/unicamo/4.mp4",
+     "ours": true
+    }
+   ]
+  },
+  {
+   "name": "5",
+   "prompt": "The camera smoothly pans right through a doorway into a well-lit kitchen and dining area, revealing black bar stools around a central island, with sunlight casting striped shadows across the tiled floor.",
+   "tiles": [
+    {
+     "label": "Camera Signal",
+     "kind": "img",
+     "src": "camera_control/camera_signal/5.png"
+    },
+    {
+     "label": "Ground Truth",
+     "kind": "video",
+     "src": "camera_control/gt/5.mp4"
+    },
+    {
+     "label": "Gen3C",
+     "kind": "video",
+     "src": "camera_control/gen3c/5.mp4"
+    },
+    {
+     "label": "SymphoMotion",
+     "kind": "video",
+     "src": "camera_control/symphomotion/5.mp4"
+    },
+    {
+     "label": "CameraNoise",
+     "kind": "video",
+     "src": "camera_control/cameranoise/5.mp4"
+    },
+    {
+     "label": "VerseCrafter",
+     "kind": "video",
+     "src": "camera_control/versecrafter/5.mp4"
+    },
+    {
+     "label": "UniCaMo (Ours)",
+     "kind": "video",
+     "src": "camera_control/unicamo/5.mp4",
+     "ours": true
+    }
+   ]
+  },
+  {
+   "name": "6",
+   "prompt": "The camera slowly pans forward across a snow-covered yard, revealing a two-story white house with a deck and snow-dusted evergreen bushes in front, while bare trees frame the background under an overcast sky.",
+   "tiles": [
+    {
+     "label": "Camera Signal",
+     "kind": "img",
+     "src": "camera_control/camera_signal/6.png"
+    },
+    {
+     "label": "Ground Truth",
+     "kind": "video",
+     "src": "camera_control/gt/6.mp4"
+    },
+    {
+     "label": "Gen3C",
+     "kind": "video",
+     "src": "camera_control/gen3c/6.mp4"
+    },
+    {
+     "label": "SymphoMotion",
+     "kind": "video",
+     "src": "camera_control/symphomotion/6.mp4"
+    },
+    {
+     "label": "CameraNoise",
+     "kind": "video",
+     "src": "camera_control/cameranoise/6.mp4"
+    },
+    {
+     "label": "VerseCrafter",
+     "kind": "video",
+     "src": "camera_control/versecrafter/6.mp4"
+    },
+    {
+     "label": "UniCaMo (Ours)",
+     "kind": "video",
+     "src": "camera_control/unicamo/6.mp4",
+     "ours": true
+    }
+   ]
+  },
+  {
+   "name": "7",
+   "prompt": "The camera smoothly pans across a spacious, well-lit living room, capturing a beige sectional sofa centered around a glass coffee table, with a brick fireplace to the right and large windows letting in natural light.",
+   "tiles": [
+    {
+     "label": "Camera Signal",
+     "kind": "img",
+     "src": "camera_control/camera_signal/7.png"
+    },
+    {
+     "label": "Ground Truth",
+     "kind": "video",
+     "src": "camera_control/gt/7.mp4"
+    },
+    {
+     "label": "Gen3C",
+     "kind": "video",
+     "src": "camera_control/gen3c/7.mp4"
+    },
+    {
+     "label": "SymphoMotion",
+     "kind": "video",
+     "src": "camera_control/symphomotion/7.mp4"
+    },
+    {
+     "label": "CameraNoise",
+     "kind": "video",
+     "src": "camera_control/cameranoise/7.mp4"
+    },
+    {
+     "label": "VerseCrafter",
+     "kind": "video",
+     "src": "camera_control/versecrafter/7.mp4"
+    },
+    {
+     "label": "UniCaMo (Ours)",
+     "kind": "video",
+     "src": "camera_control/unicamo/7.mp4",
+     "ours": true
+    }
+   ]
+  },
+  {
+   "name": "8",
+   "prompt": "The camera glides smoothly down a well-lit hallway with dark hardwood floors, passing white doors and framed artwork on the walls, revealing glimpses of bright rooms ahead, while a black wrought-iron railing runs along the right side, maintaining a steady forward motion throughout.",
+   "tiles": [
+    {
+     "label": "Camera Signal",
+     "kind": "img",
+     "src": "camera_control/camera_signal/8.png"
+    },
+    {
+     "label": "Ground Truth",
+     "kind": "video",
+     "src": "camera_control/gt/8.mp4"
+    },
+    {
+     "label": "Gen3C",
+     "kind": "video",
+     "src": "camera_control/gen3c/8.mp4"
+    },
+    {
+     "label": "SymphoMotion",
+     "kind": "video",
+     "src": "camera_control/symphomotion/8.mp4"
+    },
+    {
+     "label": "CameraNoise",
+     "kind": "video",
+     "src": "camera_control/cameranoise/8.mp4"
+    },
+    {
+     "label": "VerseCrafter",
+     "kind": "video",
+     "src": "camera_control/versecrafter/8.mp4"
+    },
+    {
+     "label": "UniCaMo (Ours)",
+     "kind": "video",
+     "src": "camera_control/unicamo/8.mp4",
+     "ours": true
+    }
+   ]
+  }
+ ],
+ "joint_control": [
+  {
+   "name": "Pexels_agricultural_scenarios_16",
+   "prompt": "In a vast field, a red tractor is working. The machine is equipped with large wheels and a large bucket full of dirt, leaving a deep mark on the land. As the panoramic downward shot moves right, you can see a person standing in the distance observing all this. The background is a land covered with green plants, with trees dotted in the distance.",
+   "tiles": [
+    {
+     "label": "Camera Signal",
+     "kind": "img",
+     "src": "join_control/camera_signal/Pexels_agricultural_scenarios_16.png"
+    },
+    {
+     "label": "Motion Signal",
+     "kind": "img",
+     "src": "join_control/motion_signal/Pexels_agricultural_scenarios_16.png"
+    },
+    {
+     "label": "Ground Truth",
+     "kind": "video",
+     "src": "join_control/gt/Pexels_agricultural_scenarios_16.mp4"
+    },
+    {
+     "label": "ATI",
+     "kind": "video",
+     "src": "join_control/ATI/Pexels_agricultural_scenarios_16.mp4"
+    },
+    {
+     "label": "SymphoMotion",
+     "kind": "video",
+     "src": "join_control/symphomotion/Pexels_agricultural_scenarios_16.mp4"
+    },
+    {
+     "label": "VerseCrafter",
+     "kind": "video",
+     "src": "join_control/VerseCrafter/Pexels_agricultural_scenarios_16.mp4"
+    },
+    {
+     "label": "UniCaMo (Ours)",
+     "kind": "video",
+     "src": "join_control/unicamo/Pexels_agricultural_scenarios_16.mp4",
+     "ours": true
+    }
+   ]
+  },
+  {
+   "name": "Pexels_aircraft_3",
+   "prompt": "A small plane taxied on the grass. The airplane has a white fuselage, a blue wing and tail, with the words \"D-KNAT\" printed on it. The plane's propeller was spinning, and a pilot was sitting in the cockpit. The background is a green meadow and trees. The entire scene is slowly taken from the panoramic head-up lens to the right, and then becomes a panoramic downward shot.",
+   "tiles": [
+    {
+     "label": "Camera Signal",
+     "kind": "img",
+     "src": "join_control/camera_signal/Pexels_aircraft_3.png"
+    },
+    {
+     "label": "Motion Signal",
+     "kind": "img",
+     "src": "join_control/motion_signal/Pexels_aircraft_3.png"
+    },
+    {
+     "label": "Ground Truth",
+     "kind": "video",
+     "src": "join_control/gt/Pexels_aircraft_3.mp4"
+    },
+    {
+     "label": "ATI",
+     "kind": "video",
+     "src": "join_control/ATI/Pexels_aircraft_3.mp4"
+    },
+    {
+     "label": "SymphoMotion",
+     "kind": "video",
+     "src": "join_control/symphomotion/Pexels_aircraft_3.mp4"
+    },
+    {
+     "label": "VerseCrafter",
+     "kind": "video",
+     "src": "join_control/VerseCrafter/Pexels_aircraft_3.mp4"
+    },
+    {
+     "label": "UniCaMo (Ours)",
+     "kind": "video",
+     "src": "join_control/unicamo/Pexels_aircraft_3.mp4",
+     "ours": true
+    }
+   ]
+  },
+  {
+   "name": "Pexels_handmade_2",
+   "prompt": "Close-up of a man using a large brush to paint a wooden board. The brush has a yellow handle and a black hair section marked with the number \"50\". The man was moving back and forth with it, leaving dark marks on the wood. The background is blurry, but it can be seen as an outdoor environment with soil or gravel on the ground.",
+   "tiles": [
+    {
+     "label": "Camera Signal",
+     "kind": "img",
+     "src": "join_control/camera_signal/Pexels_handmade_2.png"
+    },
+    {
+     "label": "Motion Signal",
+     "kind": "img",
+     "src": "join_control/motion_signal/Pexels_handmade_2.png"
+    },
+    {
+     "label": "Ground Truth",
+     "kind": "video",
+     "src": "join_control/gt/Pexels_handmade_2.mp4"
+    },
+    {
+     "label": "ATI",
+     "kind": "video",
+     "src": "join_control/ATI/Pexels_handmade_2.mp4"
+    },
+    {
+     "label": "SymphoMotion",
+     "kind": "video",
+     "src": "join_control/symphomotion/Pexels_handmade_2.mp4"
+    },
+    {
+     "label": "VerseCrafter",
+     "kind": "video",
+     "src": "join_control/VerseCrafter/Pexels_handmade_2.mp4"
+    },
+    {
+     "label": "UniCaMo (Ours)",
+     "kind": "video",
+     "src": "join_control/unicamo/Pexels_handmade_2.mp4",
+     "ours": true
+    }
+   ]
+  },
+  {
+   "name": "Pexels_other_sports_10",
+   "prompt": "In a spacious and bright hall, a white foreign woman is practicing yoga. In the panoramic flat shot, she was wearing a colorful vest and black pants, sitting on the wooden floor, spreading her legs into a one-line horse pose. Her hair was tied into a tall bun and she wore a necklace as an ornament. As the camera was pushed forward, she could be seen leaning forward slowly, putting her hands on the floor to support her body weight. The interior of the hall is full of light, and the sun shines through the windows to illuminate the entire space.",
+   "tiles": [
+    {
+     "label": "Camera Signal",
+     "kind": "img",
+     "src": "join_control/camera_signal/Pexels_other_sports_10.png"
+    },
+    {
+     "label": "Motion Signal",
+     "kind": "img",
+     "src": "join_control/motion_signal/Pexels_other_sports_10.png"
+    },
+    {
+     "label": "Ground Truth",
+     "kind": "video",
+     "src": "join_control/gt/Pexels_other_sports_10.mp4"
+    },
+    {
+     "label": "ATI",
+     "kind": "video",
+     "src": "join_control/ATI/Pexels_other_sports_10.mp4"
+    },
+    {
+     "label": "SymphoMotion",
+     "kind": "video",
+     "src": "join_control/symphomotion/Pexels_other_sports_10.mp4"
+    },
+    {
+     "label": "VerseCrafter",
+     "kind": "video",
+     "src": "join_control/VerseCrafter/Pexels_other_sports_10.mp4"
+    },
+    {
+     "label": "UniCaMo (Ours)",
+     "kind": "video",
+     "src": "join_control/unicamo/Pexels_other_sports_10.mp4",
+     "ours": true
+    }
+   ]
+  },
+  {
+   "name": "Pexels_skateboard_2",
+   "prompt": "Panoramic view of three foreign white young people running in skateboard park. They were dressed in casual clothes and held skateboards, walking from the left side of the screen to the right side. As they move, they can be seen jumping and gliding on the skateboard field. The background is a typical skateboarding site with ramps and obstacles. There are green trees in the distance. From a flat perspective, the camera follows the actions of the three people and follows the shooting.",
+   "tiles": [
+    {
+     "label": "Camera Signal",
+     "kind": "img",
+     "src": "join_control/camera_signal/Pexels_skateboard_2.png"
+    },
+    {
+     "label": "Motion Signal",
+     "kind": "img",
+     "src": "join_control/motion_signal/Pexels_skateboard_2.png"
+    },
+    {
+     "label": "Ground Truth",
+     "kind": "video",
+     "src": "join_control/gt/Pexels_skateboard_2.mp4"
+    },
+    {
+     "label": "ATI",
+     "kind": "video",
+     "src": "join_control/ATI/Pexels_skateboard_2.mp4"
+    },
+    {
+     "label": "SymphoMotion",
+     "kind": "video",
+     "src": "join_control/symphomotion/Pexels_skateboard_2.mp4"
+    },
+    {
+     "label": "VerseCrafter",
+     "kind": "video",
+     "src": "join_control/VerseCrafter/Pexels_skateboard_2.mp4"
+    },
+    {
+     "label": "UniCaMo (Ours)",
+     "kind": "video",
+     "src": "join_control/unicamo/Pexels_skateboard_2.mp4",
+     "ours": true
+    }
+   ]
+  },
+  {
+   "name": "Pexels_skateboard_12",
+   "prompt": "Two foreign white women skateboarding on outdoor road. They were dressed in casual outfits, one wearing a yellow top and black overalls, the other wearing a black top and shorts, and a black hat. They slide from the right side of the picture to the left, with green trees and grass in the background. The panoramic shot of the head-up follows the action of the two and follows the shooting.",
+   "tiles": [
+    {
+     "label": "Camera Signal",
+     "kind": "img",
+     "src": "join_control/camera_signal/Pexels_skateboard_12.png"
+    },
+    {
+     "label": "Motion Signal",
+     "kind": "img",
+     "src": "join_control/motion_signal/Pexels_skateboard_12.png"
+    },
+    {
+     "label": "Ground Truth",
+     "kind": "video",
+     "src": "join_control/gt/Pexels_skateboard_12.mp4"
+    },
+    {
+     "label": "ATI",
+     "kind": "video",
+     "src": "join_control/ATI/Pexels_skateboard_12.mp4"
+    },
+    {
+     "label": "SymphoMotion",
+     "kind": "video",
+     "src": "join_control/symphomotion/Pexels_skateboard_12.mp4"
+    },
+    {
+     "label": "VerseCrafter",
+     "kind": "video",
+     "src": "join_control/VerseCrafter/Pexels_skateboard_12.mp4"
+    },
+    {
+     "label": "UniCaMo (Ours)",
+     "kind": "video",
+     "src": "join_control/unicamo/Pexels_skateboard_12.mp4",
+     "ours": true
+    }
+   ]
+  },
+  {
+   "name": "Pexels_tennis_5",
+   "prompt": "A woman in a pink top is playing tennis on the tennis court. She held an orange tennis racket and was ready to hit the ball. As the video progressed, the tennis ball could be seen falling from the air, and the woman gently touched the tennis ball with her tennis racket to make it bounce. The background is a blurred tennis court. The close-up shot of the head-up camera is moved left to record this scene.",
+   "tiles": [
+    {
+     "label": "Camera Signal",
+     "kind": "img",
+     "src": "join_control/camera_signal/Pexels_tennis_5.png"
+    },
+    {
+     "label": "Motion Signal",
+     "kind": "img",
+     "src": "join_control/motion_signal/Pexels_tennis_5.png"
+    },
+    {
+     "label": "Ground Truth",
+     "kind": "video",
+     "src": "join_control/gt/Pexels_tennis_5.mp4"
+    },
+    {
+     "label": "ATI",
+     "kind": "video",
+     "src": "join_control/ATI/Pexels_tennis_5.mp4"
+    },
+    {
+     "label": "SymphoMotion",
+     "kind": "video",
+     "src": "join_control/symphomotion/Pexels_tennis_5.mp4"
+    },
+    {
+     "label": "VerseCrafter",
+     "kind": "video",
+     "src": "join_control/VerseCrafter/Pexels_tennis_5.mp4"
+    },
+    {
+     "label": "UniCaMo (Ours)",
+     "kind": "video",
+     "src": "join_control/unicamo/Pexels_tennis_5.mp4",
+     "ours": true
+    }
+   ]
+  },
+  {
+   "name": "Pexels_winter_sports_2",
+   "prompt": "A skier in a yellow ski suit is walking on the snowy mountain. He wore a black hat and pink goggles and held a pink ski with the pattern of the Statue of Liberty. The background is snow-covered mountains and trees. The video takes the shooting angle to look at the middle scene in the header, and the lens sways as the character moves, and then pushes it forward.",
+   "tiles": [
+    {
+     "label": "Camera Signal",
+     "kind": "img",
+     "src": "join_control/camera_signal/Pexels_winter_sports_2.png"
+    },
+    {
+     "label": "Motion Signal",
+     "kind": "img",
+     "src": "join_control/motion_signal/Pexels_winter_sports_2.png"
+    },
+    {
+     "label": "Ground Truth",
+     "kind": "video",
+     "src": "join_control/gt/Pexels_winter_sports_2.mp4"
+    },
+    {
+     "label": "ATI",
+     "kind": "video",
+     "src": "join_control/ATI/Pexels_winter_sports_2.mp4"
+    },
+    {
+     "label": "SymphoMotion",
+     "kind": "video",
+     "src": "join_control/symphomotion/Pexels_winter_sports_2.mp4"
+    },
+    {
+     "label": "VerseCrafter",
+     "kind": "video",
+     "src": "join_control/VerseCrafter/Pexels_winter_sports_2.mp4"
+    },
+    {
+     "label": "UniCaMo (Ours)",
+     "kind": "video",
+     "src": "join_control/unicamo/Pexels_winter_sports_2.mp4",
+     "ours": true
+    }
+   ]
+  }
  ]
 };

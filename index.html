@@ -126,6 +126,8 @@ section{padding:78px 0;position:relative;}
 .clip-grid video{object-fit:cover;}                /* 832x480 in a 16:9 tile: crops ~1%, no side bar */
 .media-tile.signal{background:#fff;}               /* signals are line art / RGBA overlays: a white bed, letterboxed */
 .media-tile img{width:100%;height:100%;object-fit:contain;display:block;}
+/* two-row comparisons: explicit cells (row 2 indented, ours under GT) only where the full column count fits */
+@media(min-width:1101px){.clip-grid.placed figure{grid-column:var(--col);grid-row:var(--row);}}
 @media(max-width:1100px){.clip-grid{grid-template-columns:repeat(2,minmax(0,1fr));}}
 @media(max-width:560px){.clip-grid{grid-template-columns:minmax(0,1fr);}}
 .comp-prompt{margin:0 0 16px;padding:12px 16px;background:var(--bg-2);
@@ -250,6 +252,18 @@ footer{background:var(--bg-0);color:var(--text-muted);text-align:center;
 // Section copy lives here; the clips of each section (tiles, prompts) come from content.js, which
 // make_content.py generates from the media folders. Thumbnails: images/thumbnails/<id>/<clip>.jpg.
 const SECTIONS = [
+    {
+        id: 'camera_control',
+        nav: 'Camera Comp.',
+        title: 'Camera Control Comparison',
+        sub: 'UniCaMo against camera-controlled baselines (Gen3C, SymphoMotion, CameraNoise, VerseCrafter) on the same camera path, drawn as frustums from <em>t=0s</em> to <em>t=5s</em>.'
+    },
+    {
+        id: 'joint_control',
+        nav: 'Joint Comp.',
+        title: 'Joint Camera &amp; Motion Control Comparison',
+        sub: 'UniCaMo against baselines (ATI, SymphoMotion, VerseCrafter) when the <em>camera path and object motion are controlled at once</em>; both signals are shown.'
+    },
     {
         id: 'extreme_camera',
         nav: 'Camera',
@@ -416,6 +430,25 @@ function syncGroup(vids) {
   m.addEventListener('seeked', follow);
 }
 
+// Up to 4 tiles fit one row; comparison clips (signals, GT, baselines, ours) wrap onto two rows, the second
+// indented by one column, with ours placed under Ground Truth. Returns [columns, per-tile {col,row} or null].
+function layout(tiles) {
+  const n = tiles.length;
+  if (n <= 4) return [n, null];
+  const cols = Math.ceil((n + 1) / 2);
+  const ours = tiles.findIndex(t => t.ours);
+  const order = tiles.map((t, k) => k).filter(k => k !== ours);
+  const pos = [];
+  order.slice(0, cols).forEach((k, c) => { pos[k] = {col: c + 1, row: 1}; });
+  const gt = tiles.findIndex(t => t.label === 'Ground Truth');
+  const oursCol = gt >= 0 && pos[gt] && pos[gt].col >= 2 ? pos[gt].col : 2;
+  if (ours >= 0) pos[ours] = {col: oursCol, row: 2};
+  const free = [];
+  for (let c = 2; c <= cols; c++) if (c !== oursCol) free.push(c);
+  order.slice(cols).forEach((k, j) => { pos[k] = {col: free[j], row: 2}; });
+  return [cols, pos];
+}
+
 const esc = t => t.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
 /* ═══ per-section example picker: one clip mounted at a time ═══ */
@@ -455,8 +488,9 @@ SECTIONS.forEach(s => {
       videoObserver.unobserve(v); v.pause(); v.removeAttribute('src'); v.load();
     });
     [...thumbnails.children].forEach((b, k) => b.setAttribute('aria-pressed', String(k === i)));
-    const tiles = clip.tiles.map(t => `
-        <figure>
+    const [cols, pos] = layout(clip.tiles);
+    const tiles = clip.tiles.map((t, k) => `
+        <figure${pos ? ` style="--col:${pos[k].col};--row:${pos[k].row}"` : ''}>
           <figcaption class="col-label${t.ours ? ' ours' : ''}">${t.label}</figcaption>
           <div class="media-tile${t.kind === 'img' ? ' signal' : ''}">${t.kind === 'img'
             ? `<img src="${encodeURI(t.src)}" alt="${t.label}, example ${i + 1}" loading="lazy">`
@@ -471,7 +505,7 @@ SECTIONS.forEach(s => {
         </span>
       </div>
       ${clip.prompt ? `<p class="comp-prompt">${esc(clip.prompt)}</p>` : ''}
-      <div class="clip-grid" style="--columns:${clip.tiles.length}">${tiles}</div>`;
+      <div class="clip-grid${pos ? ' placed' : ''}" style="--columns:${cols}">${tiles}</div>`;
     view.querySelectorAll('.step-btn').forEach(b =>
       b.addEventListener('click', () => select(selected + Number(b.dataset.step))));
     const vids = [...view.querySelectorAll('video')];
