@@ -21,6 +21,11 @@ const CONTENT = {
      "src": "Extreme_camera_trajectory/symphomotion/346796056_part01.mp4"
     },
     {
+     "label": "CameraNoise",
+     "kind": "video",
+     "src": "Extreme_camera_trajectory/cameranoise/346796056_part01.mp4"
+    },
+    {
      "label": "VerseCrafter",
      "kind": "video",
      "src": "Extreme_camera_trajectory/versecrafter/346796056_part01.mp4"
@@ -51,6 +56,11 @@ const CONTENT = {
      "label": "SymphoMotion",
      "kind": "video",
      "src": "Extreme_camera_trajectory/symphomotion/gm1328818930-412741468_part02.mp4"
+    },
+    {
+     "label": "CameraNoise",
+     "kind": "video",
+     "src": "Extreme_camera_trajectory/cameranoise/gm1328818930-412741468_part02.mp4"
     },
     {
      "label": "VerseCrafter",
@@ -85,6 +95,11 @@ const CONTENT = {
      "src": "Extreme_camera_trajectory/symphomotion/1757614593297_00047915_8fdfde3a_part01.mp4"
     },
     {
+     "label": "CameraNoise",
+     "kind": "video",
+     "src": "Extreme_camera_trajectory/cameranoise/1757614593297_00047915_8fdfde3a_part01.mp4"
+    },
+    {
      "label": "VerseCrafter",
      "kind": "video",
      "src": "Extreme_camera_trajectory/versecrafter/1757614593297_00047915_8fdfde3a_part01.mp4"
@@ -115,6 +130,11 @@ const CONTENT = {
      "label": "SymphoMotion",
      "kind": "video",
      "src": "Extreme_camera_trajectory/symphomotion/gm1389310439-446649766_part01.mp4"
+    },
+    {
+     "label": "CameraNoise",
+     "kind": "video",
+     "src": "Extreme_camera_trajectory/cameranoise/gm1389310439-446649766_part01.mp4"
     },
     {
      "label": "VerseCrafter",
@@ -149,6 +169,11 @@ const CONTENT = {
      "src": "Extreme_camera_trajectory/symphomotion/1757611748593_00004039_b7d1dea5_part02.mp4"
     },
     {
+     "label": "CameraNoise",
+     "kind": "video",
+     "src": "Extreme_camera_trajectory/cameranoise/1757611748593_00004039_b7d1dea5_part02.mp4"
+    },
+    {
      "label": "VerseCrafter",
      "kind": "video",
      "src": "Extreme_camera_trajectory/versecrafter/1757611748593_00004039_b7d1dea5_part02.mp4"
@@ -179,6 +204,11 @@ const CONTENT = {
      "label": "SymphoMotion",
      "kind": "video",
      "src": "Extreme_camera_trajectory/symphomotion/1757614269637_00042762_93bfaac9_part01.mp4"
+    },
+    {
+     "label": "CameraNoise",
+     "kind": "video",
+     "src": "Extreme_camera_trajectory/cameranoise/1757614269637_00042762_93bfaac9_part01.mp4"
     },
     {
      "label": "VerseCrafter",
@@ -213,6 +243,11 @@ const CONTENT = {
      "src": "Extreme_camera_trajectory/symphomotion/43tBrOV1-sY__b2dc1873918e67d8.mp4"
     },
     {
+     "label": "CameraNoise",
+     "kind": "video",
+     "src": "Extreme_camera_trajectory/cameranoise/43tBrOV1-sY__b2dc1873918e67d8.mp4"
+    },
+    {
      "label": "VerseCrafter",
      "kind": "video",
      "src": "Extreme_camera_trajectory/versecrafter/43tBrOV1-sY__b2dc1873918e67d8.mp4"
@@ -245,6 +280,11 @@ const CONTENT = {
      "src": "Extreme_camera_trajectory/symphomotion/-lF1OltRIOw__1d46e25b06eef337.mp4"
     },
     {
+     "label": "CameraNoise",
+     "kind": "video",
+     "src": "Extreme_camera_trajectory/cameranoise/-lF1OltRIOw__1d46e25b06eef337.mp4"
+    },
+    {
      "label": "VerseCrafter",
      "kind": "video",
      "src": "Extreme_camera_trajectory/versecrafter/-lF1OltRIOw__1d46e25b06eef337.mp4"
@@ -275,6 +315,11 @@ const CONTENT = {
      "label": "SymphoMotion",
      "kind": "video",
      "src": "Extreme_camera_trajectory/symphomotion/3RbI2DVrv-U__701c87315926ad90.mp4"
+    },
+    {
+     "label": "CameraNoise",
+     "kind": "video",
+     "src": "Extreme_camera_trajectory/cameranoise/3RbI2DVrv-U__701c87315926ad90.mp4"
     },
     {
      "label": "VerseCrafter",
