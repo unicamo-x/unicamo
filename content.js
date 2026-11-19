@@ -382,6 +382,43 @@ const CONTENT = {
  ],
  "rotation": [
   {
+   "name": "347276258_part01",
+   "prompt": "An elderly couple in autumn attire is dancing closely in a park. They rotate gently, moving in a circular motion around each other, their hands clasped and arms wrapped around one another. The background remains softly blurred, showing trees with golden leaves and a distant playground. The scene is bathed in soft, natural daylight, creating a warm and serene atmosphere. The camera follows their movement smoothly, maintaining a medium shot throughout.",
+   "tiles": [
+    {
+     "label": "Camera Signal",
+     "kind": "img",
+     "src": "3d_rotation/camera_signal/347276258_part01.png"
+    },
+    {
+     "label": "Motion Signal",
+     "kind": "img",
+     "src": "3d_rotation/motion_signal/347276258_part01.png"
+    },
+    {
+     "label": "Ground Truth",
+     "kind": "video",
+     "src": "3d_rotation/gt/347276258_part01.mp4"
+    },
+    {
+     "label": "SymphoMotion",
+     "kind": "video",
+     "src": "3d_rotation/symphomotion/347276258_part01.mp4"
+    },
+    {
+     "label": "VerseCrafter",
+     "kind": "video",
+     "src": "3d_rotation/versecrafter/347276258_part01.mp4"
+    },
+    {
+     "label": "UniCaMo (Ours)",
+     "kind": "video",
+     "src": "3d_rotation/unicamo/347276258_part01.mp4",
+     "ours": true
+    }
+   ]
+  },
+  {
    "name": "10578791_part02",
    "prompt": "Two girls in denim outfits are spinning in a grassy field while holding hands. They move in a circular motion, spinning left and right, their hair flying as they turn. The girls remain the central focus, interacting only through their synchronized spinning. The background features a wide open field with distant mountains and a wooden barn under a bright, sunlit sky. The camera follows their movement smoothly, keeping them centered as they spin.",
    "tiles": [
@@ -451,43 +488,6 @@ const CONTENT = {
      "label": "UniCaMo (Ours)",
      "kind": "video",
      "src": "3d_rotation/unicamo/1757618432739_00109807_1888fc5d_part02.mp4",
-     "ours": true
-    }
-   ]
-  },
-  {
-   "name": "347276258_part01",
-   "prompt": "An elderly couple in autumn attire is dancing closely in a park. They rotate gently, moving in a circular motion around each other, their hands clasped and arms wrapped around one another. The background remains softly blurred, showing trees with golden leaves and a distant playground. The scene is bathed in soft, natural daylight, creating a warm and serene atmosphere. The camera follows their movement smoothly, maintaining a medium shot throughout.",
-   "tiles": [
-    {
-     "label": "Camera Signal",
-     "kind": "img",
-     "src": "3d_rotation/camera_signal/347276258_part01.png"
-    },
-    {
-     "label": "Motion Signal",
-     "kind": "img",
-     "src": "3d_rotation/motion_signal/347276258_part01.png"
-    },
-    {
-     "label": "Ground Truth",
-     "kind": "video",
-     "src": "3d_rotation/gt/347276258_part01.mp4"
-    },
-    {
-     "label": "SymphoMotion",
-     "kind": "video",
-     "src": "3d_rotation/symphomotion/347276258_part01.mp4"
-    },
-    {
-     "label": "VerseCrafter",
-     "kind": "video",
-     "src": "3d_rotation/versecrafter/347276258_part01.mp4"
-    },
-    {
-     "label": "UniCaMo (Ours)",
-     "kind": "video",
-     "src": "3d_rotation/unicamo/347276258_part01.mp4",
      "ours": true
     }
    ]
