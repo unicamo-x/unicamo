@@ -401,6 +401,16 @@ const CONTENT = {
      "src": "3d_rotation/gt/10578791_part02.mp4"
     },
     {
+     "label": "SymphoMotion",
+     "kind": "video",
+     "src": "3d_rotation/symphomotion/10578791_part02.mp4"
+    },
+    {
+     "label": "VerseCrafter",
+     "kind": "video",
+     "src": "3d_rotation/versecrafter/10578791_part02.mp4"
+    },
+    {
      "label": "UniCaMo (Ours)",
      "kind": "video",
      "src": "3d_rotation/unicamo/10578791_part02.mp4",
@@ -426,6 +436,16 @@ const CONTENT = {
      "label": "Ground Truth",
      "kind": "video",
      "src": "3d_rotation/gt/1757618432739_00109807_1888fc5d_part02.mp4"
+    },
+    {
+     "label": "SymphoMotion",
+     "kind": "video",
+     "src": "3d_rotation/symphomotion/1757618432739_00109807_1888fc5d_part02.mp4"
+    },
+    {
+     "label": "VerseCrafter",
+     "kind": "video",
+     "src": "3d_rotation/versecrafter/1757618432739_00109807_1888fc5d_part02.mp4"
     },
     {
      "label": "UniCaMo (Ours)",
@@ -455,6 +475,16 @@ const CONTENT = {
      "src": "3d_rotation/gt/347276258_part01.mp4"
     },
     {
+     "label": "SymphoMotion",
+     "kind": "video",
+     "src": "3d_rotation/symphomotion/347276258_part01.mp4"
+    },
+    {
+     "label": "VerseCrafter",
+     "kind": "video",
+     "src": "3d_rotation/versecrafter/347276258_part01.mp4"
+    },
+    {
      "label": "UniCaMo (Ours)",
      "kind": "video",
      "src": "3d_rotation/unicamo/347276258_part01.mp4",
@@ -480,6 +510,16 @@ const CONTENT = {
      "label": "Ground Truth",
      "kind": "video",
      "src": "3d_rotation/gt/gm1036555198-277463031_part01.mp4"
+    },
+    {
+     "label": "SymphoMotion",
+     "kind": "video",
+     "src": "3d_rotation/symphomotion/gm1036555198-277463031_part01.mp4"
+    },
+    {
+     "label": "VerseCrafter",
+     "kind": "video",
+     "src": "3d_rotation/versecrafter/gm1036555198-277463031_part01.mp4"
     },
     {
      "label": "UniCaMo (Ours)",
@@ -509,6 +549,16 @@ const CONTENT = {
      "src": "3d_rotation/gt/gm1485988273-511845960_part01.mp4"
     },
     {
+     "label": "SymphoMotion",
+     "kind": "video",
+     "src": "3d_rotation/symphomotion/gm1485988273-511845960_part01.mp4"
+    },
+    {
+     "label": "VerseCrafter",
+     "kind": "video",
+     "src": "3d_rotation/versecrafter/gm1485988273-511845960_part01.mp4"
+    },
+    {
      "label": "UniCaMo (Ours)",
      "kind": "video",
      "src": "3d_rotation/unicamo/gm1485988273-511845960_part01.mp4",
@@ -533,6 +583,16 @@ const CONTENT = {
      "src": "reappearance-occlusion/gt/1757614396640_00044746_46c1d9b1_part02.mp4"
     },
     {
+     "label": "SymphoMotion",
+     "kind": "video",
+     "src": "reappearance-occlusion/symphomotion/1757614396640_00044746_46c1d9b1_part02.mp4"
+    },
+    {
+     "label": "VerseCrafter",
+     "kind": "video",
+     "src": "reappearance-occlusion/versecrafter/1757614396640_00044746_46c1d9b1_part02.mp4"
+    },
+    {
      "label": "UniCaMo (Ours)",
      "kind": "video",
      "src": "reappearance-occlusion/unicamo/1757614396640_00044746_46c1d9b1_part02.mp4",
@@ -553,6 +613,16 @@ const CONTENT = {
      "label": "Ground Truth",
      "kind": "video",
      "src": "reappearance-occlusion/gt/1757621528436_00159144_e357197e_part02.mp4"
+    },
+    {
+     "label": "SymphoMotion",
+     "kind": "video",
+     "src": "reappearance-occlusion/symphomotion/1757621528436_00159144_e357197e_part02.mp4"
+    },
+    {
+     "label": "VerseCrafter",
+     "kind": "video",
+     "src": "reappearance-occlusion/versecrafter/1757621528436_00159144_e357197e_part02.mp4"
     },
     {
      "label": "UniCaMo (Ours)",
@@ -582,6 +652,16 @@ const CONTENT = {
      "src": "reappearance-occlusion/gt/1757622666821_00176441_aaa5735d_part01.mp4"
     },
     {
+     "label": "SymphoMotion",
+     "kind": "video",
+     "src": "reappearance-occlusion/symphomotion/1757622666821_00176441_aaa5735d_part01.mp4"
+    },
+    {
+     "label": "VerseCrafter",
+     "kind": "video",
+     "src": "reappearance-occlusion/versecrafter/1757622666821_00176441_aaa5735d_part01.mp4"
+    },
+    {
      "label": "UniCaMo (Ours)",
      "kind": "video",
      "src": "reappearance-occlusion/unicamo/1757622666821_00176441_aaa5735d_part01.mp4",
@@ -607,6 +687,16 @@ const CONTENT = {
      "label": "Ground Truth",
      "kind": "video",
      "src": "reappearance-occlusion/gt/236917_part01.mp4"
+    },
+    {
+     "label": "SymphoMotion",
+     "kind": "video",
+     "src": "reappearance-occlusion/symphomotion/236917_part01.mp4"
+    },
+    {
+     "label": "VerseCrafter",
+     "kind": "video",
+     "src": "reappearance-occlusion/versecrafter/236917_part01.mp4"
     },
     {
      "label": "UniCaMo (Ours)",
@@ -636,6 +726,16 @@ const CONTENT = {
      "src": "reappearance-occlusion/gt/348811051_part01.mp4"
     },
     {
+     "label": "SymphoMotion",
+     "kind": "video",
+     "src": "reappearance-occlusion/symphomotion/348811051_part01.mp4"
+    },
+    {
+     "label": "VerseCrafter",
+     "kind": "video",
+     "src": "reappearance-occlusion/versecrafter/348811051_part01.mp4"
+    },
+    {
      "label": "UniCaMo (Ours)",
      "kind": "video",
      "src": "reappearance-occlusion/unicamo/348811051_part01.mp4",
@@ -646,74 +746,6 @@ const CONTENT = {
  ],
  "manipulation": [
   {
-   "name": "flying-bicycle",
-   "prompt": "A man wearing a helmet rides a black bicycle along a path in a sunny park, pedaling steadily as the wheels spin. Then he and the bicycle magically lift off the ground and fly up into the sky, rising higher and higher above the grass while the wheels keep turning. Green trees and a bright lawn stretch out behind him. The camera pans to the right and tilts up, following the man as he rides and takes off.",
-   "tiles": [
-    {
-     "label": "Control Signal",
-     "kind": "img",
-     "src": "Rigid-articulated-OOD object manipulation/canvas-chosen/control-condition/flying-bicycle.png"
-    },
-    {
-     "label": "UniCaMo (Ours)",
-     "kind": "video",
-     "src": "Rigid-articulated-OOD object manipulation/canvas-chosen/gen-video/flying-bicycle.mp4",
-     "ours": true
-    }
-   ]
-  },
-  {
-   "name": "bend-rope",
-   "prompt": "A first-person view of a man holding a thick rope with both hands above a wooden table. He slowly brings his two fists toward each other, and the rope slackens and bends into a deep hanging curve between his hands. Then he moves his hands apart again and pulls the rope tight until it is stretched straight between his fists. Soft daylight comes from a window on the left. The camera remains static.",
-   "tiles": [
-    {
-     "label": "Control Signal",
-     "kind": "img",
-     "src": "Rigid-articulated-OOD object manipulation/canvas-chosen/control-condition/bend-rope.png"
-    },
-    {
-     "label": "UniCaMo (Ours)",
-     "kind": "video",
-     "src": "Rigid-articulated-OOD object manipulation/canvas-chosen/gen-video/bend-rope.mp4",
-     "ours": true
-    }
-   ]
-  },
-  {
-   "name": "closing-drawer",
-   "prompt": "A person in a grey tracksuit stands in a bright modern kitchen with one hand on the front of an open wooden drawer filled with kitchen utensils. The person leans forward and pushes the drawer smoothly into the cabinet under the countertop until it is closed, then straightens up and pulls it back out again to open it. The utensils stay in place inside the drawer as it slides. Sunlight fills the kitchen. The camera remains static.",
-   "tiles": [
-    {
-     "label": "Control Signal",
-     "kind": "img",
-     "src": "Rigid-articulated-OOD object manipulation/canvas-chosen/control-condition/closing-drawer.png"
-    },
-    {
-     "label": "UniCaMo (Ours)",
-     "kind": "video",
-     "src": "Rigid-articulated-OOD object manipulation/canvas-chosen/gen-video/closing-drawer.mp4",
-     "ours": true
-    }
-   ]
-  },
-  {
-   "name": "cut-bread",
-   "prompt": "A baker in a flour-dusted brown apron slices a rustic loaf of bread on a wooden cutting board. His right hand moves a serrated bread knife back and forth in a steady sawing motion, cutting down through the crust, while his left hand holds the loaf still. Shelves of fresh bread stand in the warm light of the bakery behind him. The camera remains static.",
-   "tiles": [
-    {
-     "label": "Control Signal",
-     "kind": "img",
-     "src": "Rigid-articulated-OOD object manipulation/canvas-chosen/control-condition/cut-bread.png"
-    },
-    {
-     "label": "UniCaMo (Ours)",
-     "kind": "video",
-     "src": "Rigid-articulated-OOD object manipulation/canvas-chosen/gen-video/cut-bread.mp4",
-     "ours": true
-    }
-   ]
-  },
-  {
    "name": "fold-clothes-2",
    "prompt": "A top-down view of a blue cotton T-shirt lying flat on a wooden table, with a man's two hands resting on either side of it. The hands reach to the bottom-left and bottom-right corners of the shirt, pinch the hem and lift it. They carry the hem upward over the shirt, the soft fabric bending in a rounded fold and sagging loosely between the hands, then lay it on the chest just below the collar and let go, and the cloth drops and settles into a neat half fold. The bare wooden table shows where the lower half of the shirt was, in soft daylight. The camera remains static.",
    "tiles": [
@@ -721,6 +753,16 @@ const CONTENT = {
      "label": "Control Signal",
      "kind": "img",
      "src": "Rigid-articulated-OOD object manipulation/canvas-chosen/control-condition/fold-clothes-2.png"
+    },
+    {
+     "label": "SymphoMotion",
+     "kind": "video",
+     "src": "Rigid-articulated-OOD object manipulation/canvas-chosen/symphomotion/fold-clothes-2.mp4"
+    },
+    {
+     "label": "VerseCrafter",
+     "kind": "video",
+     "src": "Rigid-articulated-OOD object manipulation/canvas-chosen/versecrafter/fold-clothes-2.mp4"
     },
     {
      "label": "UniCaMo (Ours)",
@@ -740,9 +782,127 @@ const CONTENT = {
      "src": "Rigid-articulated-OOD object manipulation/canvas-chosen/control-condition/open-fridge-2.png"
     },
     {
+     "label": "SymphoMotion",
+     "kind": "video",
+     "src": "Rigid-articulated-OOD object manipulation/canvas-chosen/symphomotion/open-fridge-2.mp4"
+    },
+    {
+     "label": "VerseCrafter",
+     "kind": "video",
+     "src": "Rigid-articulated-OOD object manipulation/canvas-chosen/versecrafter/open-fridge-2.mp4"
+    },
+    {
      "label": "UniCaMo (Ours)",
      "kind": "video",
      "src": "Rigid-articulated-OOD object manipulation/canvas-chosen/gen-video/open-fridge-2.mp4",
+     "ours": true
+    }
+   ]
+  },
+  {
+   "name": "flying-bicycle",
+   "prompt": "A man wearing a helmet rides a black bicycle along a path in a sunny park, pedaling steadily as the wheels spin. Then he and the bicycle magically lift off the ground and fly up into the sky, rising higher and higher above the grass while the wheels keep turning. Green trees and a bright lawn stretch out behind him. The camera pans to the right and tilts up, following the man as he rides and takes off.",
+   "tiles": [
+    {
+     "label": "Control Signal",
+     "kind": "img",
+     "src": "Rigid-articulated-OOD object manipulation/canvas-chosen/control-condition/flying-bicycle.png"
+    },
+    {
+     "label": "SymphoMotion",
+     "kind": "video",
+     "src": "Rigid-articulated-OOD object manipulation/canvas-chosen/symphomotion/flying-bicycle.mp4"
+    },
+    {
+     "label": "VerseCrafter",
+     "kind": "video",
+     "src": "Rigid-articulated-OOD object manipulation/canvas-chosen/versecrafter/flying-bicycle.mp4"
+    },
+    {
+     "label": "UniCaMo (Ours)",
+     "kind": "video",
+     "src": "Rigid-articulated-OOD object manipulation/canvas-chosen/gen-video/flying-bicycle.mp4",
+     "ours": true
+    }
+   ]
+  },
+  {
+   "name": "bend-rope",
+   "prompt": "A first-person view of a man holding a thick rope with both hands above a wooden table. He slowly brings his two fists toward each other, and the rope slackens and bends into a deep hanging curve between his hands. Then he moves his hands apart again and pulls the rope tight until it is stretched straight between his fists. Soft daylight comes from a window on the left. The camera remains static.",
+   "tiles": [
+    {
+     "label": "Control Signal",
+     "kind": "img",
+     "src": "Rigid-articulated-OOD object manipulation/canvas-chosen/control-condition/bend-rope.png"
+    },
+    {
+     "label": "SymphoMotion",
+     "kind": "video",
+     "src": "Rigid-articulated-OOD object manipulation/canvas-chosen/symphomotion/bend-rope.mp4"
+    },
+    {
+     "label": "VerseCrafter",
+     "kind": "video",
+     "src": "Rigid-articulated-OOD object manipulation/canvas-chosen/versecrafter/bend-rope.mp4"
+    },
+    {
+     "label": "UniCaMo (Ours)",
+     "kind": "video",
+     "src": "Rigid-articulated-OOD object manipulation/canvas-chosen/gen-video/bend-rope.mp4",
+     "ours": true
+    }
+   ]
+  },
+  {
+   "name": "closing-drawer",
+   "prompt": "A person in a grey tracksuit stands in a bright modern kitchen with one hand on the front of an open wooden drawer filled with kitchen utensils. The person leans forward and pushes the drawer smoothly into the cabinet under the countertop until it is closed, then straightens up and pulls it back out again to open it. The utensils stay in place inside the drawer as it slides. Sunlight fills the kitchen. The camera remains static.",
+   "tiles": [
+    {
+     "label": "Control Signal",
+     "kind": "img",
+     "src": "Rigid-articulated-OOD object manipulation/canvas-chosen/control-condition/closing-drawer.png"
+    },
+    {
+     "label": "SymphoMotion",
+     "kind": "video",
+     "src": "Rigid-articulated-OOD object manipulation/canvas-chosen/symphomotion/closing-drawer.mp4"
+    },
+    {
+     "label": "VerseCrafter",
+     "kind": "video",
+     "src": "Rigid-articulated-OOD object manipulation/canvas-chosen/versecrafter/closing-drawer.mp4"
+    },
+    {
+     "label": "UniCaMo (Ours)",
+     "kind": "video",
+     "src": "Rigid-articulated-OOD object manipulation/canvas-chosen/gen-video/closing-drawer.mp4",
+     "ours": true
+    }
+   ]
+  },
+  {
+   "name": "cut-bread",
+   "prompt": "A baker in a flour-dusted brown apron slices a rustic loaf of bread on a wooden cutting board. His right hand moves a serrated bread knife back and forth in a steady sawing motion, cutting down through the crust, while his left hand holds the loaf still. Shelves of fresh bread stand in the warm light of the bakery behind him. The camera remains static.",
+   "tiles": [
+    {
+     "label": "Control Signal",
+     "kind": "img",
+     "src": "Rigid-articulated-OOD object manipulation/canvas-chosen/control-condition/cut-bread.png"
+    },
+    {
+     "label": "SymphoMotion",
+     "kind": "video",
+     "src": "Rigid-articulated-OOD object manipulation/canvas-chosen/symphomotion/cut-bread.mp4"
+    },
+    {
+     "label": "VerseCrafter",
+     "kind": "video",
+     "src": "Rigid-articulated-OOD object manipulation/canvas-chosen/versecrafter/cut-bread.mp4"
+    },
+    {
+     "label": "UniCaMo (Ours)",
+     "kind": "video",
+     "src": "Rigid-articulated-OOD object manipulation/canvas-chosen/gen-video/cut-bread.mp4",
      "ours": true
     }
    ]
@@ -755,6 +915,16 @@ const CONTENT = {
      "label": "Control Signal",
      "kind": "img",
      "src": "Rigid-articulated-OOD object manipulation/canvas-chosen/control-condition/wash-dishes.png"
+    },
+    {
+     "label": "SymphoMotion",
+     "kind": "video",
+     "src": "Rigid-articulated-OOD object manipulation/canvas-chosen/symphomotion/wash-dishes.mp4"
+    },
+    {
+     "label": "VerseCrafter",
+     "kind": "video",
+     "src": "Rigid-articulated-OOD object manipulation/canvas-chosen/versecrafter/wash-dishes.mp4"
     },
     {
      "label": "UniCaMo (Ours)",
