@@ -298,6 +298,18 @@ const SECTIONS = [
         nav: 'Manipulation',
         title: 'Non-Rigid, Articulated &amp; OOD Object Manipulation',
         sub: 'Rigid, articulated and out-of-distribution objects moved by a designed 3D path. The control signal shows frame 0 lifted to 3D with the <em>red path</em> of the chosen part (arrowheads give the direction of travel); UniCaMo moves only that part while the rest of the scene stays put. SymphoMotion and VerseCrafter are shown under the same signal for comparison.'
+    },
+    {
+        id: 'in_the_wild',
+        nav: 'In-the-Wild',
+        title: 'In-the-Wild Control',
+        sub: 'In-the-wild scenes, real and stylised. The control signal shows the intended motion drawn on the first frame (prompts give the camera movement); UniCaMo is compared with Wan-Move, ATI and SymphoMotion under the <em>same control signal</em>.'
+    },
+    {
+        id: 'warping',
+        nav: '2D Warping',
+        title: 'Comparison with 2D Noise Warping',
+        sub: 'Our 3D-grounded noise against <em>Go-with-the-Flow</em>\'s 2D optical-flow noise warping, both built from the same ground-truth video. Each warped noise is shown above the video generated from it. Go-with-the-Flow generates 49 frames, the others 81; all clips play over the same duration.'
     }
 ];
 SECTIONS.forEach(s => { s.clips = CONTENT[s.id] || []; });

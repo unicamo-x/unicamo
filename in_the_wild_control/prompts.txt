@@ -1,0 +1,8 @@
+1.mp4	A woman walks to the right, behind the man; the camera remains static.
+2.mp4	A woman walks to the right, in front of the man; the camera remains static.
+3.mp4	A man walks around a woman as the camera arcs to the right.
+4.mp4	A woman walks to the right behind the man; a man walks to the left in front of the woman; the camera follows the man.
+5.mp4	A calm daytime city street with tall buildings, moving cars and taxis, pedestrians on sidewalks, and a muted blue sky, accented by neon signs and streetlights. The camera translates smoothly to the right while gradually moving forward, maintaining steady motion with a slight acceleration near the end to reveal more of the street.
+6.mp4	A scenic, adventurous high-altitude mountain pass with a winding road packed with cars, vans, motorcycles, and RVs, surrounded by steep grassy hills and rocky peaks with patches of snow under a vivid blue sky. The camera glides forward smoothly along the road, subtly drifting left with the curve in a steady, immersive ascent.
+7.mp4	A red crystal elephant walks behind the blue crystal rhino; the camera pans right to follow the elephant's movement.
+8.mp4	A blue wizard and a red wizard walk around each other, with the red wizard coming on top first.
