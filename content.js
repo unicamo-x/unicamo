@@ -1653,134 +1653,6 @@ const CONTENT = {
  ],
  "in_the_wild": [
   {
-   "name": "1",
-   "prompt": "A woman walks to the right, behind the man; the camera remains static.",
-   "tiles": [
-    {
-     "label": "Control Signal",
-     "kind": "img",
-     "src": "in_the_wild_control/control-condition/1.png"
-    },
-    {
-     "label": "Wan-Move",
-     "kind": "video",
-     "src": "in_the_wild_control/wanmove/1.mp4"
-    },
-    {
-     "label": "ATI",
-     "kind": "video",
-     "src": "in_the_wild_control/ATI/1.mp4"
-    },
-    {
-     "label": "SymphoMotion",
-     "kind": "video",
-     "src": "in_the_wild_control/symphomotion/1.mp4"
-    },
-    {
-     "label": "UniCaMo (Ours)",
-     "kind": "video",
-     "src": "in_the_wild_control/unicamo/1.mp4",
-     "ours": true
-    }
-   ]
-  },
-  {
-   "name": "2",
-   "prompt": "A woman walks to the right, in front of the man; the camera remains static.",
-   "tiles": [
-    {
-     "label": "Control Signal",
-     "kind": "img",
-     "src": "in_the_wild_control/control-condition/2.png"
-    },
-    {
-     "label": "Wan-Move",
-     "kind": "video",
-     "src": "in_the_wild_control/wanmove/2.mp4"
-    },
-    {
-     "label": "ATI",
-     "kind": "video",
-     "src": "in_the_wild_control/ATI/2.mp4"
-    },
-    {
-     "label": "SymphoMotion",
-     "kind": "video",
-     "src": "in_the_wild_control/symphomotion/2.mp4"
-    },
-    {
-     "label": "UniCaMo (Ours)",
-     "kind": "video",
-     "src": "in_the_wild_control/unicamo/2.mp4",
-     "ours": true
-    }
-   ]
-  },
-  {
-   "name": "3",
-   "prompt": "A man walks around a woman as the camera arcs to the right.",
-   "tiles": [
-    {
-     "label": "Control Signal",
-     "kind": "img",
-     "src": "in_the_wild_control/control-condition/3.png"
-    },
-    {
-     "label": "Wan-Move",
-     "kind": "video",
-     "src": "in_the_wild_control/wanmove/3.mp4"
-    },
-    {
-     "label": "ATI",
-     "kind": "video",
-     "src": "in_the_wild_control/ATI/3.mp4"
-    },
-    {
-     "label": "SymphoMotion",
-     "kind": "video",
-     "src": "in_the_wild_control/symphomotion/3.mp4"
-    },
-    {
-     "label": "UniCaMo (Ours)",
-     "kind": "video",
-     "src": "in_the_wild_control/unicamo/3.mp4",
-     "ours": true
-    }
-   ]
-  },
-  {
-   "name": "4",
-   "prompt": "A woman walks to the right behind the man; a man walks to the left in front of the woman; the camera follows the man.",
-   "tiles": [
-    {
-     "label": "Control Signal",
-     "kind": "img",
-     "src": "in_the_wild_control/control-condition/4.png"
-    },
-    {
-     "label": "Wan-Move",
-     "kind": "video",
-     "src": "in_the_wild_control/wanmove/4.mp4"
-    },
-    {
-     "label": "ATI",
-     "kind": "video",
-     "src": "in_the_wild_control/ATI/4.mp4"
-    },
-    {
-     "label": "SymphoMotion",
-     "kind": "video",
-     "src": "in_the_wild_control/symphomotion/4.mp4"
-    },
-    {
-     "label": "UniCaMo (Ours)",
-     "kind": "video",
-     "src": "in_the_wild_control/unicamo/4.mp4",
-     "ours": true
-    }
-   ]
-  },
-  {
    "name": "7",
    "prompt": "A red crystal elephant walks behind the blue crystal rhino; the camera pans right to follow the elephant's movement.",
    "tiles": [
@@ -1803,6 +1675,11 @@ const CONTENT = {
      "label": "SymphoMotion",
      "kind": "video",
      "src": "in_the_wild_control/symphomotion/7.mp4"
+    },
+    {
+     "label": "VerseCrafter",
+     "kind": "video",
+     "src": "in_the_wild_control/versecrafter/7.mp4"
     },
     {
      "label": "UniCaMo (Ours)",
@@ -1837,9 +1714,162 @@ const CONTENT = {
      "src": "in_the_wild_control/symphomotion/8.mp4"
     },
     {
+     "label": "VerseCrafter",
+     "kind": "video",
+     "src": "in_the_wild_control/versecrafter/8.mp4"
+    },
+    {
      "label": "UniCaMo (Ours)",
      "kind": "video",
      "src": "in_the_wild_control/unicamo/8.mp4",
+     "ours": true
+    }
+   ]
+  },
+  {
+   "name": "3",
+   "prompt": "A man walks around a woman as the camera arcs to the right.",
+   "tiles": [
+    {
+     "label": "Control Signal",
+     "kind": "img",
+     "src": "in_the_wild_control/control-condition/3.png"
+    },
+    {
+     "label": "Wan-Move",
+     "kind": "video",
+     "src": "in_the_wild_control/wanmove/3.mp4"
+    },
+    {
+     "label": "ATI",
+     "kind": "video",
+     "src": "in_the_wild_control/ATI/3.mp4"
+    },
+    {
+     "label": "SymphoMotion",
+     "kind": "video",
+     "src": "in_the_wild_control/symphomotion/3.mp4"
+    },
+    {
+     "label": "VerseCrafter",
+     "kind": "video",
+     "src": "in_the_wild_control/versecrafter/3.mp4"
+    },
+    {
+     "label": "UniCaMo (Ours)",
+     "kind": "video",
+     "src": "in_the_wild_control/unicamo/3.mp4",
+     "ours": true
+    }
+   ]
+  },
+  {
+   "name": "4",
+   "prompt": "A woman walks to the right behind the man; a man walks to the left in front of the woman; the camera follows the man.",
+   "tiles": [
+    {
+     "label": "Control Signal",
+     "kind": "img",
+     "src": "in_the_wild_control/control-condition/4.png"
+    },
+    {
+     "label": "Wan-Move",
+     "kind": "video",
+     "src": "in_the_wild_control/wanmove/4.mp4"
+    },
+    {
+     "label": "ATI",
+     "kind": "video",
+     "src": "in_the_wild_control/ATI/4.mp4"
+    },
+    {
+     "label": "SymphoMotion",
+     "kind": "video",
+     "src": "in_the_wild_control/symphomotion/4.mp4"
+    },
+    {
+     "label": "VerseCrafter",
+     "kind": "video",
+     "src": "in_the_wild_control/versecrafter/4.mp4"
+    },
+    {
+     "label": "UniCaMo (Ours)",
+     "kind": "video",
+     "src": "in_the_wild_control/unicamo/4.mp4",
+     "ours": true
+    }
+   ]
+  },
+  {
+   "name": "1",
+   "prompt": "A woman walks to the right, behind the man; the camera remains static.",
+   "tiles": [
+    {
+     "label": "Control Signal",
+     "kind": "img",
+     "src": "in_the_wild_control/control-condition/1.png"
+    },
+    {
+     "label": "Wan-Move",
+     "kind": "video",
+     "src": "in_the_wild_control/wanmove/1.mp4"
+    },
+    {
+     "label": "ATI",
+     "kind": "video",
+     "src": "in_the_wild_control/ATI/1.mp4"
+    },
+    {
+     "label": "SymphoMotion",
+     "kind": "video",
+     "src": "in_the_wild_control/symphomotion/1.mp4"
+    },
+    {
+     "label": "VerseCrafter",
+     "kind": "video",
+     "src": "in_the_wild_control/versecrafter/1.mp4"
+    },
+    {
+     "label": "UniCaMo (Ours)",
+     "kind": "video",
+     "src": "in_the_wild_control/unicamo/1.mp4",
+     "ours": true
+    }
+   ]
+  },
+  {
+   "name": "2",
+   "prompt": "A woman walks to the right, in front of the man; the camera remains static.",
+   "tiles": [
+    {
+     "label": "Control Signal",
+     "kind": "img",
+     "src": "in_the_wild_control/control-condition/2.png"
+    },
+    {
+     "label": "Wan-Move",
+     "kind": "video",
+     "src": "in_the_wild_control/wanmove/2.mp4"
+    },
+    {
+     "label": "ATI",
+     "kind": "video",
+     "src": "in_the_wild_control/ATI/2.mp4"
+    },
+    {
+     "label": "SymphoMotion",
+     "kind": "video",
+     "src": "in_the_wild_control/symphomotion/2.mp4"
+    },
+    {
+     "label": "VerseCrafter",
+     "kind": "video",
+     "src": "in_the_wild_control/versecrafter/2.mp4"
+    },
+    {
+     "label": "UniCaMo (Ours)",
+     "kind": "video",
+     "src": "in_the_wild_control/unicamo/2.mp4",
      "ours": true
     }
    ]
